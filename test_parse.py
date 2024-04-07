@@ -4,7 +4,29 @@ import json
 from parse import convert_csv_to_json
 
 class TestCSVtoJSONConversion(unittest.TestCase):
+    """
+    Unit tests for CSV to JSON conversion.
+
+    This test case class contains unit tests for the conversion of CSV to JSON.
+    It verifies the correctness of the conversion process and performs additional
+    validation on the converted data.
+
+    """
+
     def test_conversion(self):
+        """
+        Test the conversion of CSV to JSON.
+
+        This method performs the following steps:
+        1. Defines the paths for input CSV file, output JSON file, and expected output JSON file.
+        2. Executes the conversion by calling the `convert_csv_to_json` function.
+        3. Verifies the conversion result by comparing the actual output JSON with the expected output JSON.
+        4. Performs additional detailed validation on the converted data.
+
+        Raises:
+            AssertionError: If the conversion result does not match the expected output.
+
+        """
         input_csv_path = 'testdata/sample_input.csv'  # サンプルCSVファイル
         output_json_path = 'testdata/test_output.json'  # 出力JSONファイルのパス
         expected_output_path = 'testdata/sample_output.json'  # 期待される出力JSONファイルのパス

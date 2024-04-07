@@ -1,4 +1,18 @@
-from dataclasses import dataclass, asdict, field
+"""
+This module provides functions for parsing a CSV file and converting it to a
+JSON file.
+
+It defines a dataclass called Subject, which represents a subject with its
+attributes.
+The module also includes a function called convert_csv_to_json, which takes a
+CSV file path and a JSON file path as input and converts the CSV file to a
+JSON file.
+
+Example usage:
+    convert_csv_to_json("kdb.csv", "kdb.json")
+"""
+
+from dataclasses import dataclass, field
 import csv
 import json
 from typing import ClassVar, Dict, List
@@ -12,6 +26,10 @@ logging.basicConfig(
 
 @dataclass
 class Subject:
+    """
+    Represents a subject with its attributes.
+    """
+
     class_id: str
     name: str
     module: str
@@ -44,6 +62,15 @@ class Subject:
 
     @classmethod
     def from_csv_row(cls, row: Dict[str, str]) -> "Subject":
+        """
+        Creates a Subject instance from a CSV row.
+
+        Args:
+            row (Dict[str, str]): A dictionary representing a row of CSV data.
+
+        Returns:
+            Subject: A Subject instance created from the CSV row.
+        """
         return cls(
             class_id=row["科目番号"],
             name=row["科目名"],
@@ -56,6 +83,16 @@ class Subject:
 
 
 def convert_csv_to_json(csv_file_path: str, json_file_path: str) -> None:
+    """
+    Converts a CSV file to a JSON file.
+
+    Args:
+        csv_file_path (str): The path to the CSV file.
+        json_file_path (str): The path to the JSON file.
+
+    Returns:
+        None
+    """
     data = {}
     with open(csv_file_path, mode="r", encoding="utf-8") as csv_file:
         csv_reader = csv.DictReader(csv_file)
@@ -74,7 +111,7 @@ def convert_csv_to_json(csv_file_path: str, json_file_path: str) -> None:
 
     with open(json_file_path, mode="w", encoding="utf-8") as json_file:
         json.dump(data, json_file, ensure_ascii=False, indent=2)
-    logging.info(f"CSVデータを'{json_file_path}'へ変換しました。")
+        logging.info("CSVデータを'%s'へ変換しました。", json_file_path)
 
 
 if __name__ == "__main__":
