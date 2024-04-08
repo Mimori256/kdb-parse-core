@@ -1,7 +1,8 @@
 import os
 import datetime
-import requests
 import urllib.parse
+import sys
+import requests
 
 now = datetime.datetime.now()
 year = now.year
@@ -70,7 +71,7 @@ try:
 except:
     os.rename("tmp.csv", "kdb.csv")
     print("CSV updated")
-    exit()
+    sys.exit()
 
 
 
