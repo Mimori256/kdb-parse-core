@@ -11,11 +11,12 @@ Example usage:
 
 import csv
 import json
+from typing import Dict, List
 import xml.etree.ElementTree as ET
 from enum import Enum
 
 
-def get_translations(lang: str) -> dict[str, str]:
+def get_translations(lang: str) -> Dict[str, str]:
     """
     Retrieves translations for a specific language.
 
@@ -27,7 +28,7 @@ def get_translations(lang: str) -> dict[str, str]:
         specified language.
     """
     with open("translations.json", "r", encoding="utf_8") as f:
-        trans: dict[str, dict[str, str]] = json.load(f)
+        trans: Dict[str, Dict[str, str]] = json.load(f)
         return trans[lang]
 
 
@@ -58,7 +59,7 @@ def course_enum(lang: str) -> Enum:
 
     """
     with open("csvHeader.json", "r", encoding="utf_8") as f:
-        cols: dict[str, list[str]] = json.load(f)
+        cols: Dict[str, List[str]] = json.load(f)
         return Enum("Course", cols[lang], start=0)
 
 
