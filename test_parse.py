@@ -27,9 +27,9 @@ class TestCSVtoJSONConversion(unittest.TestCase):
             AssertionError: If the conversion result does not match the expected output.
 
         """
-        input_csv_path = 'testdata/sample_input.csv'  # サンプルCSVファイル
-        output_json_path = 'testdata/test_output.json'  # 出力JSONファイルのパス
-        expected_output_path = 'testdata/sample_output.json'  # 期待される出力JSONファイルのパス
+        input_csv_path = 'testdata/sample_kdb.csv'  # サンプルCSVファイル
+        output_json_path = 'testdata/test_kdb.json'  # 出力JSONファイルのパス
+        expected_output_path = 'testdata/sample_kdb.json'  # 期待される出力JSONファイルのパス
 
         # 変換を実行
         convert_csv_to_json(input_csv_path, output_json_path)
