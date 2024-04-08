@@ -1,52 +1,39 @@
+"""
+This module provides functions for converting a CSV file to a structured JSON file.
+"""
+
 import json
 import csv
+import logging
+from dataclasses import asdict
+from typing import Dict, List
+from subject_dataclass import Subject
 
+def convert_csv_to_structural_json(csv_file_path: str, json_file_path: str) -> None:
+    """
+    Converts a CSV file to a structured JSON file.
 
-def csv_to_dict() -> dict[str, list[dict[str, str]]]:
-    courses = {"courses": []}
-    with open("kdb.csv", "r", encoding="utf_8") as f:
-        reader = csv.reader(f)
-        once = False
-        for row in reader:
-            if not once:
-                once = True
-                continue
-            course_data = {}
-            course_data["id"] = row[0].strip()
-            course_data["name"] = row[1].strip()
-            course_data["method"] = row[2].strip()
-            course_data["credits"] = row[3].strip()
-            course_data["standard_course_year"] = row[4].strip()
-            course_data["modules"] = row[5].strip()
-            course_data["period"] = row[6].strip()
-            course_data["classroom"] = row[7].strip()
-            course_data["teaching_staff"] = row[8].strip()
-            course_data["class_outline"] = row[9].strip()
-            course_data["note"] = row[10].strip()
-            course_data["application_for_enrollment"] = row[11].strip()
-            course_data["application_requirements_for_enrollment"] = row[12].strip()
-            course_data["application_for_short_term_international_students"] = row[
-                13
-            ].strip()
-            course_data[
-                "application_requirements_for_short_term_international_students"
-            ] = row[14].strip()
-            course_data["english_course_name"] = row[15].strip()
-            course_data["course_code"] = row[16].strip()
-            course_data["requirement_course_name"] = row[17].strip()
-            course_data["data_update_date"] = row[18].strip()
-            courses["courses"].append(course_data)
+    Args:
+        csv_file_path (str): The path to the CSV file.
+        json_file_path (str): The path to the JSON file.
+    
+    Returns:
+        None
+    """
 
-    return courses
+    data: Dict[str, List[Dict[str, str]]] = {"courses": []}
 
+    with open(csv_file_path, mode="r", encoding="utf-8") as csv_file:
+        csv_reader = csv.DictReader(csv_file, fieldnames=Subject.CSV_HEADER)
+        next(csv_reader) # Skip the header row
+        for row in csv_reader:
+            subject = Subject.from_csv_row(row)
+            data["courses"].append(asdict(subject))
 
-def main():
-    courses = csv_to_dict()
-    with open("kdb_structural.json", "w") as f:
-        json.dump(courses, f, ensure_ascii=False, indent=2)
-
-    print("complete")
+    with open(json_file_path, mode="w", encoding="utf-8") as json_file:
+        json.dump(data, json_file, ensure_ascii=False, indent=2)
+        logging.info("CSVデータを'%s'へ変換しました。", json_file_path)
 
 
 if __name__ == "__main__":
-    main()
+    convert_csv_to_structural_json("kdb.csv", "kdb_structural.json")
