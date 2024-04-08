@@ -1,0 +1,1936 @@
+- class_id: HE21041
+  class_outline: 人体の生理機能の正常と異常の違いから説き起こし,病気がおこる原因を感染,免疫,遺伝,薬理などの基礎的側面から教授する。ヒトを疾病から守り,健康を増進させるという医学の最も基本となる概念のその基礎から解説する。
+  credits: '2.0'
+  data_update_date: '2024-03-29 16:22:48'
+  english_name: Introduction to Medical Science
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '1'
+  module: 春A 春B
+  name: 基礎医学総論
+  period: 水3,4 金3,4
+  remarks: オンライン(オンデマンド型)
+  requirement_subject_name: 基礎医学総論
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '2'
+  subject_code: HE21041
+  teaching_staff: 尾崎 遼,水谷 英二,久武 幸司,渋谷 和子,大根田 修,野口 恵美子,森川 一也,大林 典彦,Ho Kiong,三好 浩稔,高橋
+    智,櫻井 武,入江 賢児,武井 陽介,小金澤 禎史,桝 正幸,村谷 匡史,加藤 光保,川口 敦史,柳沢 裕美,柳沢 正史,水野 聖哉,小林 麻己人,松原 大祐,大石
+    陽,Lazarus Michael,蕨 栄治,川﨑 綾,坂口 昌徳,大庭 良介,岩田 卓,船越 祐司,柴 綾
+- class_id: YBB0842
+  class_outline: 芸術支援に関する演習を行う。
+  credits: '1.0'
+  data_update_date: '2024-03-25 19:34:26'
+  english_name: Seminars on Art Environment Support A-II
+  enrollment_application: △
+  enrollment_requirements: ''
+  method: '2'
+  module: 秋ABC
+  name: 芸術支援学演習A-II
+  period: 随時
+  remarks: 対面(オンライン併用型)
+  requirement_subject_name: 芸術支援学演習A-2
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 2・3
+  subject_code: Y120842
+  teaching_staff: 直江 俊雄,吉田 奈穂子
+- class_id: FF18704
+  class_outline: 理工学への応用を念頭において、解析学Bに引き続き、複素関数論を講義する。複素関数の各種定理と応用を扱う。講義を中心に随時、演習を行う。
+  credits: '1.0'
+  data_update_date: '2024-03-22 20:06:00'
+  english_name: Analysis C
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '4'
+  module: 秋AB
+  name: 解析学C
+  period: 金2
+  remarks: 1・2クラス 専門基礎科目 必修科目 対面
+  requirement_subject_name: 解析学C
+  room: 3A207
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '2'
+  subject_code: FF18704
+  teaching_staff: 小林 伸彦
+- class_id: '9434064'
+  class_outline: 「中等英語科教育法Ia, b」の学修を発展させ,主に英語科教育の実践的側面を概観するとともに,模擬授業を中心に,高校における英語指導に役立つ実践的な知識と技術を体得する。
+  credits: '1.0'
+  data_update_date: '2024-03-25 14:26:16'
+  english_name: Methodology of English Language Education II a
+  enrollment_application: △
+  enrollment_requirements: ''
+  method: '4'
+  module: 春AB
+  name: 中等英語科教育法IIa
+  period: 水2
+  remarks: 対面
+  requirement_subject_name: 中等英語科教育法IIa
+  room: 1C310
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: '9434064'
+  teaching_staff: 久保野 雅史
+- class_id: FB13141
+  class_outline: 基本群に関する基礎的な事柄について解説する.
+  credits: '1.5'
+  data_update_date: '2024-03-25 08:46:28'
+  english_name: Topology A
+  enrollment_application: ''
+  enrollment_requirements: 受講前に授業担当教員に連絡し受講許可を得る事
+  method: '1'
+  module: 春ABC
+  name: トポロジーA
+  period: 水2
+  remarks: 対面
+  requirement_subject_name: トポロジーA
+  room: 1E203
+  short_term_students_application: △
+  short_term_students_requirements: 受講前に授業担当教員に連絡し受講許可を得る事
+  standard_course_year: '3'
+  subject_code: FB13141
+  teaching_staff: 石井 敦
+- class_id: 0ATGA28
+  class_outline: DNAの複製、転写、翻訳および代謝、細胞周期、細胞シグナル伝達などの分子基盤について学習する。 目標:人体機能の分子メカニズムについて論じることができる。
+    本コースはオンラインで行う。詳細は受講者に後日連絡する。 1. DNA, RNA, 核酸代謝、染色体、ゲノム、2. DNA の複製、修復、組換え、3. 転写と遺伝子発現調節、4.
+    翻訳の機構と調節、5. 代謝 I（糖代謝）、6. 代謝 II（TCA サイクル、電子伝達系）、7. 代謝 III（脂質代謝）、8. 代謝 IV（アミノ酸代謝）、9.
+    細胞周期、10. 細胞内シグナル伝達
+  credits: '1.0'
+  data_update_date: '2024-04-03 17:56:59'
+  english_name: Topics in Biochemistry
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: 春AB
+  name: 生化学特論
+  period: 月1
+  remarks: （英） 0BTX111と同一。 英語で授業。 オンライン(オンデマンド型)
+  requirement_subject_name: 生化学特論
+  room: 4F204
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '1'
+  subject_code: 01EQ046
+  teaching_staff: 福田 綾,入江 賢児,久武 幸司,水野 智亮,桝 和子,岡田 拓也
+- class_id: BB31321
+  class_outline: 「昭和」期の知識人の言動を題材にして,今日的問題がいかにして形成されてきたかを考える。
+  credits: '2.0'
+  data_update_date: '2024-03-29 15:27:32'
+  english_name: Japanese Political Thought
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: ''
+  name: 日本政治思想
+  period: ''
+  remarks: 西暦奇数年度開講。 BC11621と同一。 対面
+  requirement_subject_name: 日本政治思想
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 2 - 4
+  subject_code: BB31321
+  teaching_staff: ''
+- class_id: EE21522
+  class_outline: 地誌学に関する論文の講読、論文のまとめ方、問題設定・事前調査等を学ぶ。4年次生は、卒業論文の経過報告を行う。地誌学・人文地理学分野で卒業論文を作成しようとする者は、「地誌学演習A」「人文地理学演習A・B」をあわせて履修すること。
+  credits: '1.0'
+  data_update_date: '2024-03-22 15:42:05'
+  english_name: Seminar on Regional Geography B
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 秋AB
+  name: 地誌学演習B
+  period: 金5
+  remarks: 「地誌学演習B(EE21482)」を修得済みの者は履修できない。 対面
+  requirement_subject_name: 地誌学演習B
+  room: 1E303
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: EE21522
+  teaching_staff: 呉羽 正昭,堤 純,山下 亜紀郎
+- class_id: 0ATAW01
+  class_outline: 保健体育教育学研究Iでは、体育のカリキュラム論、学習指導論、指導方略・指導技術などの観点から体育科教育学の基礎を学び、理解する。また、体育科教育学の今日的課題を取り上げて議論することで、各自の問題意識を明確にする。さらに各自の問題意識に基づいた課題を設定し、課題に応じた基礎となる領域の文献を講読するとともに先行研究を探し手学習し、自身の研究についての枠組みををつくる。
+  credits: '3.0'
+  data_update_date: '2024-03-25 17:03:48'
+  english_name: Research on Physical Education I
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 通年
+  name: 保健体育教育学研究I
+  period: 応談
+  remarks: ''
+  requirement_subject_name: 保健体育教育学研究I
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '1'
+  subject_code: 0ATAW01
+  teaching_staff: 宮崎 明世
+- class_id: 01LA310
+  class_outline: 国際租税制度の法源の一つである租税条約に関して、趣旨・目的、基本原則、個々の条文の解釈・適用上の論点を中心に学習する。授業においては、具体的なケースや判例等を素材としてディスカッションを取り入れることにより、租税法に関する理論と実務の双方の観点から考察する思考方式を涵養することを目指す。授業は講義形式とする。
+  credits: '1.0'
+  data_update_date: '2024-03-27 12:52:17'
+  english_name: International Taxation II
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: 秋A
+  name: 国際課税法II
+  period: 土2,3
+  remarks: 0ADL607と同一。 対面
+  requirement_subject_name: 国際課税法II
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1・2
+  subject_code: 01LA310
+  teaching_staff: 本田 光宏
+- class_id: 0AJEE13
+  class_outline: 無機・分析化学分野における研究テーマについての基礎的実験を指導し、無機・分析化学研究法の基礎を習得させる。修士論文の草稿の完成および最終原稿の作成に向けての指導を行う。研究倫理に関する指導も行う。
+  credits: '3.0'
+  data_update_date: '2024-03-22 17:31:24'
+  english_name: Research in Inorganic/Analytical Chemistry IIB
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '3'
+  module: 秋ABC
+  name: 無機・分析化学特別研究IIB
+  period: 随時
+  remarks: 要望があれば英語で授業. 対面. 対面
+  requirement_subject_name: 無機・分析化学特別研究IIB
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '2'
+  subject_code: 0AJEE13
+  teaching_staff: 二瓶 雅之,小島 隆彦,中谷 清治,坂口 綾,石塚 智也,志賀 拓也,長友 重紀,小谷 弘明,山﨑 信哉,宮川 晃尚,三原 のぞみ
+- class_id: 0AXA402
+  class_outline: トランスレーショナルサイエンスでは、創薬の過程において、非臨床段階で得られた知見を効率良く、迅速に臨床段階へ橋渡しすることを目的としている。当該領域において重要な研究ツールであるPET、CT、MRI等のバイオイメージング手法は、動物とヒトで試験プロトコールが類似していること、同一個体において長期的試験が可能なこと、生体において視覚的・定量的なデータが得られること、非侵襲的技術であることなどの利点を有している。本講義では、これら手法の原理、創薬開発における解析例を概説するとともに、研究開発の最前線における経験や、創薬の魅力を伝える。
+  credits: '1.0'
+  data_update_date: '2024-03-26 16:31:28'
+  english_name: Translational Science in Drug Discovery
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: 春BC
+  name: 創薬トランスレーショナルサイエンス
+  period: 月1,2
+  remarks: 英語で授業。 オンライン(オンデマンド型)
+  requirement_subject_name: 創薬トランスレーショナルサイエンス
+  room: ''
+  short_term_students_application: ''
+  short_term_students_requirements: ''
+  standard_course_year: '1'
+  subject_code: 0AXA402
+  teaching_staff: 宮前 友策,野田 昭宏,須藤 勝美,村上 佳裕,伊東 洋行,田端 健司
+- class_id: 0ABAGX0
+  class_outline: 言語学サブプログラムにおいて修士論文を作成する1年次生が複数の教員から成る指導グループの指導のもと、教員と学生で議論を行いながら、言語研究における研究倫理、言語研究の諸側面に関する理解を深めるとともに、言語研究全体の中での位置づけを考えながら、修士論文の構想を深める。
+  credits: '2.0'
+  data_update_date: '2024-03-29 10:31:39'
+  english_name: Project Seminar (1A)
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 春AB
+  name: プロジェクト演習(1A)
+  period: 応談
+  remarks: オンライン(対面併用型) 指導教員の指示に従ってください。
+  requirement_subject_name: プロジェクト演習(1A)
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '1'
+  subject_code: 0ABAGX0
+  teaching_staff: 佐々木 勲人,大矢 俊明,池田 潤,橋本 修,金 仁和,臼山 利信,島田 雅晴,宮腰 幸一,和田 尚明,那須 昭夫,和氣 愛仁,小野
+    雄一,住大 恭康,石田 尊,澤田 浩子,黄 賢?,金谷 優,田川 拓海,山村 崇斗,矢澤 翔,今田 水穂,納谷 亮平,菅野 倫匡,菊池 そのみ,田中 祐輔,宮川
+    創
+- class_id: 0ATTE02
+  class_outline: 模写を通して、専門的な材料の扱い方や技法について演習を行い、日本画における伝統的な表現技法のあり方を考察する。
+  credits: '2.0'
+  data_update_date: '2024-03-18 12:18:21'
+  english_name: Workshops on Technique of Japanese Style Painting-2
+  enrollment_application: ×
+  enrollment_requirements: 受講前に授業担当教員に連絡し受講許可を得る事
+  method: '2'
+  module: 秋AB
+  name: 日本美術技法演習-2
+  period: 木2,3
+  remarks: 対面
+  requirement_subject_name: 日本美術技法演習-2
+  room: アート&デザイン実習室1
+  short_term_students_application: △
+  short_term_students_requirements: 受講前に授業担当教員に連絡し受講許可を得る事
+  standard_course_year: 1・2
+  subject_code: 0ATTE02
+  teaching_staff: 諏訪 智美
+- class_id: YBE0302
+  class_outline: 古典から現代までの日本画の鑑賞を通して美術史的な背景を調査し、作品を観察、文章化することで、日本画表現の理解を深める。
+  credits: '1.0'
+  data_update_date: '2024-03-25 19:34:52'
+  english_name: General Lectures on Appreciation of Japanese-style Painting
+  enrollment_application: △
+  enrollment_requirements: 受講前に授業担当教員に連絡し受講許可を得る事
+  method: '2'
+  module: 通年
+  name: 日本画鑑賞研究
+  period: 随時
+  remarks: 日本画領域の学生に限る。 実務経験教員. 対面 指定した展覧会等を鑑賞し、作品についてレポートを提出する。
+  requirement_subject_name: 日本画鑑賞研究
+  room: アート&デザイン実習室1
+  short_term_students_application: △
+  short_term_students_requirements: 受講前に授業担当教員に連絡し受講許可を得る事
+  standard_course_year: '3'
+  subject_code: YBE0302
+  teaching_staff: 程塚 敏明,山本 浩之,諏訪 智美
+- class_id: AB60A21
+  class_outline: 引き続き哲学するとはどういうことかを徹底的に体得してもらう(他専攻・他学類歓迎。ただし、電子シラバス熟読のこと)。
+  credits: '1.0'
+  data_update_date: '2024-04-03 15:26:30'
+  english_name: Introduction to Philosophy-b
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: 秋AB
+  name: 哲学通論-b
+  period: 火1
+  remarks: オンライン(同時双方向型)
+  requirement_subject_name: 哲学通論-b
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1・2
+  subject_code: AB60A21
+  teaching_staff: 檜垣 良成
+- class_id: 02CH204
+  class_outline: 先端的研究や技術開発を行う国内外の大学・研究機関・企業等に一定期間参画し、様々な情報技術の活用事例を学ぶとともに、次世代技術や次世代システムの研究開発能力、ヒューマンスキル等を獲得する。
+  credits: '1.0'
+  data_update_date: '2024-03-11 10:03:20'
+  english_name: Research Internship I
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '3'
+  module: 通年
+  name: 研究型インターンシップI
+  period: 随時
+  remarks: 0BLD502と同一。 CDP
+  requirement_subject_name: 研究型インターンシップI
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1 - 3
+  subject_code: 02CH204
+  teaching_staff: 山際 伸一,二村 保徳,金澤 健治,五十嵐 康彦
+- class_id: W182102
+  class_outline: スポーツ運動をバイオメカニクス的に研究するために必要な各種の実験手段やデータ処理法を実際の運動を分析することにより学ぶ.
+  credits: '2.0'
+  data_update_date: '2024-04-02 16:48:33'
+  english_name: Seminar of Sport Biomechanics I
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 春AB 秋AB
+  name: スポーツバイオメカニクス演習I
+  period: 月2 水3
+  remarks: 体育総合実験棟(SPEC)102で実施 対面
+  requirement_subject_name: スポーツバイオメカニクス演習I
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: W182102
+  teaching_staff: 藤井 範久,小池 関也,佐渡 夏紀
+- class_id: 0ANB412
+  class_outline: フード・セキュリティの概念および経済発展のプロセスにおける農業部門の役割と食料市場の特徴についての理解を深め、その背景にある家計などの個別主体の行動やコミュニティの機能に関する経済学的分析方法について論じる。また、日本の経験の位置づけやその適用可能性について検討する。この科目では、日本の農業発展経路と食料経済成長の経験について理解することを修学の目標とする。授業では、Household
+    Model、 Ricardian Trap、 Structural Change、 Common Property Resourcesなど関連する最新のトピックスを取り上げ紹介する。食料経済・農業発展論に関連する幅広い知識を系統的に学習することで、研究課題の設定と計画の立案・遂行に必要な基礎的な知識と能力を習得する。
+  credits: '2.0'
+  data_update_date: '2024-03-16 15:58:04'
+  english_name: Economics of Food Security and Agricultural Development
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: 秋AB
+  name: 食料経済・農業発展論
+  period: 水7,8
+  remarks: JICA開発大学院連携プログラム科目 対面(オンライン併用型)
+  requirement_subject_name: 食料経済・農業発展論
+  room: 生農C703
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1・2
+  subject_code: 0ANB412
+  teaching_staff: 首藤 久人
+- class_id: 0BBADG3
+  class_outline: 2年次後期段階に応じた歴史地理学分野の博士論文作成のための研究指導を行うことを目的とする。博士論文の構想を具体化するとともに、従来の研究史との関係をいっそう明確化し、博士論文の基礎となる学術論文の作成をさらに進める。受講者は、博士論文作成を意識した研究報告を行い、討論を行う。
+  credits: '1.0'
+  data_update_date: '2024-03-05 19:55:53'
+  english_name: Thesis Research and Preparation in Historical Geography IIB
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 秋AB
+  name: 歴史地理学研究演習IIB
+  period: 応談
+  remarks: 対面
+  requirement_subject_name: 歴史地理学研究演習IIB
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '2'
+  subject_code: 0BBADG3
+  teaching_staff: 中西 僚太郎,清水 克志
+- class_id: FH45222
+  class_outline: 都市計画・建築計画を考える上で不可欠な空間的に広がりのある情報(地図・図面など)をコンピュータを用いて作成・分析するための基礎的な方法について、専門的アプリケーション(CAD・GIS)を利用した課題を通じて修得する。
+  credits: '3.0'
+  data_update_date: '2024-03-29 12:58:56'
+  english_name: Seminar in Information Systems:Urban and Regional Planning
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 秋AB
+  name: 都市計画情報演習
+  period: 火3-5
+  remarks: 都市計画共通。必修科目(2019年度以降入学者;都市計画主専攻)。 対面 2年次履修推奨科目(都市計画主専攻)。1年次生は履修不可。 2019年度までにFH62033を修得したものの履修不可。2018年度以前入学者に対してはFH62033に読み替える。
+    履修希望者が多い場合は社会工学類2～4年次生を優先する。
+  requirement_subject_name: 都市計画情報演習
+  room: 3C102,3C104
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '2'
+  subject_code: FH45222
+  teaching_staff: 渡辺 俊,雨宮 護
+- class_id: 0AXA602
+  class_outline: 本科目では次世代の再生可能資源と目されているバイオマス素材の中で、特に藻類バイオマスに焦点をあてて、有用な機能・成分がエネルギー、食料、健康および生活保障にどう活用される可能性があるのか、さらにこれらの機能・成分のビジネスの現状と将来展望について解説し、議論する。
+  credits: '1.0'
+  data_update_date: '2024-03-21 20:27:25'
+  english_name: Biomass Science
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: 秋B
+  name: バイオマス科学
+  period: 集中
+  remarks: 英語で授業。 12/5,12/6,12/12,12/13 オンライン(対面併用型)
+  requirement_subject_name: バイオマス科学
+  room: ''
+  short_term_students_application: ''
+  short_term_students_requirements: ''
+  standard_course_year: '1'
+  subject_code: 01RC402
+  teaching_staff: 高橋 真哉,バーカート マイケル
+- class_id: 0AJCE61
+  class_outline: 物性理論に関するトピックスについて、外部講師を招いて講義する。
+  credits: '1.0'
+  data_update_date: '2024-03-22 17:28:41'
+  english_name: Special Lecture on Theoretical Condensed Matter Physics II
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '1'
+  module: 秋ABC
+  name: 物性理論特講II
+  period: 集中
+  remarks: 01BC467と同一。 対面(オンライン併用型)
+  requirement_subject_name: 凝縮系特講II
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1・2
+  subject_code: 01BC467
+  teaching_staff: ''
+- class_id: 02RB320
+  class_outline: エンパワーメント情報学の分野横断的専門知識を獲得するための高度な内容について,広い視野を得られるようにするための講義を行う.エンパワーメント情報学高度専門科目総論aに引き続き,さらに広範囲の視野を涵養する.
+  credits: '2.0'
+  data_update_date: '2024-04-03 09:03:07'
+  english_name: Highly Specialized and Widely Interdisciplinary Lecture B in Empowerment
+    Informatics
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '1'
+  module: 通年
+  name: エンパワーメント情報学高度専門科目総論b
+  period: 随時
+  remarks: 対面(オンライン併用型) 受講生は本プログラムの学生に限る.履修に際しては担当教員から履修登録時に許可を得ること.エンパワーメント情報学高度専門科目総論aの履修登録も本科目履修要件である.
+  requirement_subject_name: エンパワーメント情報学高度専門科目総論b
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 3 - 5
+  subject_code: 02RB320
+  teaching_staff: 亀田 能成
+- class_id: XJ23012
+  class_outline: 日常生活、大学生活に必要な日本語力を総合的につける。レベルによっては、プレゼンテーションやレポートの書き方、読解入門、日本文化なども学ぶ。
+  credits: '-'
+  data_update_date: '2024-03-25 12:05:44'
+  english_name: Intensive Japanese D000B
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 秋ABC
+  name: 集中日本語D000B
+  period: 月・火・水・木・金1-4
+  remarks: 外国人留学生が受講できる。 対面 詳細は授業内で、またはmanabaで周知する。
+  requirement_subject_name: 集中日本語D000B
+  room: 9P101,9P104
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1 - 6
+  subject_code: XJ23012
+  teaching_staff: 関崎 博紀,ブッシュネル ケード コンラン,文 昶允,チョーハン アヌブティ,岩崎 拓也
+- class_id: GB36403
+  class_outline: 情報システムを構築するハードウェア及びソフトウェアに関し,プロセッサ・ネットワーク・システム及び応用プログラム,通信等の要素技術の修得を目指し,それらに関するテーマの中から幾つか選択して具体的課題に取り組む。
+  credits: '3.0'
+  data_update_date: '2024-03-27 13:30:10'
+  english_name: Computer Systems Laboratory A
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '3'
+  module: 春ABC
+  name: 情報システム実験A
+  period: 水3,4,金5,6
+  remarks: 対面(オンライン併用型) 開講日注意（テーマごとに設定。詳細は主専攻実験ウェブページ参照）
+  requirement_subject_name: 情報システム実験A
+  room: 3C113,3C205
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: GB36403
+  teaching_staff: 小林 諒平,天笠 俊之,大山 恵弘,木村 成伴,佐藤 聡,塩川 浩昭,新城 靖,高橋 大介,多田野 寛人,建部 修見,冨安 洋史,朴
+    泰祐,西川 博昭
+- class_id: GE50732
+  class_outline: 専門科目や卒業研究に必要な英語能力をミニ・レクチャーの聴解、学術的なテキストの講読、アカデミック・ライフ関連の会話や作文の練習等を通じて習得する。
+  credits: '1.0'
+  data_update_date: '2024-03-27 15:03:51'
+  english_name: English for Specialized Subjects B-3
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '2'
+  module: 春AB
+  name: 専門英語B-3
+  period: 月4
+  remarks: 対面 情報資源経営主専攻生対象.
+  requirement_subject_name: 専門英語B
+  room: 7A101
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: GE50102
+  teaching_staff: バールィシェフ エドワルド
+- class_id: 0ABAAL4
+  class_outline: 宗教学の中における神話研究の問題を取り上げる。特に、歴史と神話の関係に関わる諸問題を考察する。継承される神話形式と生成する神話との相互関係、現代社会における文字化された神話と口承伝承の神話との相互関係などを取り上げる。
+  credits: '1.0'
+  data_update_date: '2024-03-05 19:51:20'
+  english_name: Seminar in Study of Religions I(1)A
+  enrollment_application: ''
+  enrollment_requirements: 受講前に授業担当教員に連絡し受講許可を得る事
+  method: '2'
+  module: 春AB
+  name: 宗教学I演習(1)A
+  period: 水2
+  remarks: 西暦偶数年度開講。 02DBJ64と同一。 対面
+  requirement_subject_name: 宗教学I演習(1)A
+  room: 人社A823
+  short_term_students_application: △
+  short_term_students_requirements: 受講前に授業担当教員に連絡し受講許可を得る事
+  standard_course_year: 1・2
+  subject_code: 0ABAAL4
+  teaching_staff: 木村 武史
+- class_id: AC61B51
+  class_outline: This course explores the diversity of Canadian cinema, focusing on
+    non-mainstream and non-commercial productions. Our goal is to develop a fuller
+    understanding of Canadian society and culture by looking at its artistic productions.
+  credits: '1.0'
+  data_update_date: '2024-03-28 18:03:21'
+  english_name: 'Canadian Studies: Special Topic II'
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: ''
+  name: カナダ文化特講II
+  period: ''
+  remarks: 英語で授業。 2024年度開講せず。 AC61231の単位取得者は履修できない。 シラバスは英語版を見てください。
+  requirement_subject_name: カナダ文化特講II
+  room: ''
+  short_term_students_application: ''
+  short_term_students_requirements: ''
+  standard_course_year: 2・3
+  subject_code: AC61B51
+  teaching_staff: ''
+- class_id: HC36171
+  class_outline: さまざまな健康障害を持つ子どもとその家族に対して、成長発達や家族の視点、健康障害を持つ子どもが必要とする日常生活援助などの学びを統合し、健康障害を持つ子どもと家族の看護について学ぶ。
+    また、必要な看護技術と子どもの生活に欠かすことのできない遊びを安全かつ効果的に実施する技法を身につける。さらに、看護過程の展開に関して、症状のアセスメント、看護問題の抽出、看護計画の立案について具体的疾患事例を通して学ぶ。
+  credits: '2.0'
+  data_update_date: '2024-03-27 17:54:00'
+  english_name: Methodology of Child Health Care and Developmental Nursing
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '1'
+  module: 春AB
+  name: 子どもの発達支援方法論
+  period: 火3,4
+  remarks: 看護学類学生に限る 2022年度以降入学生用 実務経験教員. 対面
+  requirement_subject_name: 子どもの発達支援方法論
+  room: 4B214
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: HC36171
+  teaching_staff: 涌水 理恵
+- class_id: BC51171
+  class_outline: 本講義は権威主義体制の持続や民主化など、主に発展途上国における政治体制の変動について理解を深めることを目的とする。構造・制度・アクターという3つの側面に注目した理論的枠組みを踏まえて、政治変動が生じる要因を説明する。毎回の授業では、政治変動の各局面に関連する主要な政治理論を取り上げ、個別の政治発展の事例について検討していく。
+  credits: '2.0'
+  data_update_date: '2024-03-27 17:31:08'
+  english_name: Theory of Political Change
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: 春AB
+  name: 政治変動論
+  period: 月2,3
+  remarks: BB31581と同一。 対面(オンライン併用型)
+  requirement_subject_name: 政治変動論
+  room: 3A416
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1 - 3
+  subject_code: BC51171
+  teaching_staff: 茅根 由佳
+- class_id: FF55101
+  class_outline: 固体物理学1に引き続き、固体の種々の性質が量子力学に基づくミクロな視点からどのように理解されるかを学習する。固体中の電子を自由電子と見なすモデルにより固体の電気的・熱的性質がどのように説明できるかを学んだ後、結晶中の電子状態の基礎理論であるエネルギー・バンド構造を学び、さらにそれに基づき金属の電気伝導や様々な物性を理解する。
+  credits: '2.0'
+  data_update_date: '2024-03-22 20:05:51'
+  english_name: Solid State Physics 2
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: 秋AB
+  name: 固体物理学2
+  period: 月1,金5
+  remarks: 専門科目 選択科目 FF45101と同一。 対面(オンライン併用型)
+  requirement_subject_name: 固体物理学2
+  room: 3A405
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: FF45101
+  teaching_staff: 藤岡 淳
+- class_id: BE12612
+  class_outline: Students who register for Seminar F1 cannot register for Seminar
+    F, F2, F3, F4, and F5.
+  credits: '1.0'
+  data_update_date: '2024-03-29 15:27:31'
+  english_name: Seminar F1
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 春AB
+  name: Seminar F1
+  period: 随時
+  remarks: Moday 5,6 （In principle） 英語で授業。 対面
+  requirement_subject_name: Seminar F
+  room: 1B303
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '4'
+  subject_code: BE12602
+  teaching_staff: オルトラーニ アンドレア
+- class_id: 0ATP9D1
+  class_outline: 体操競技の男子6種目(ゆか、あん馬、つり輪、跳馬、平行棒、鉄棒)、女子4種目(平均台、跳馬、段違い平行棒、ゆか)について、それぞれの種目の発達史、種目特性、技の体系、技術およびコーチング法、ルール等について、国内外の文献や資料の講読と討議を行い、体操競技の指導者としての専門的知識を身に着ける。資料として、主に、現行採点規則の原語版、ドイツ語圏および英語圏の専門文献、日本国内の研究論文などを用いる。
+  credits: '3.0'
+  data_update_date: '2024-03-28 18:53:31'
+  english_name: Seminar in Theory of Artistic Gymnastics I
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 春AB秋AB 秋C
+  name: 体操競技コーチング論演習I
+  period: 木3 木3,4
+  remarks: 対面
+  requirement_subject_name: 体操競技コーチング論演習
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '1'
+  subject_code: 01EH315
+  teaching_staff: 渡辺 良夫,齋藤 卓
+- class_id: '2217213'
+  class_outline: 様々なレベルにおいて、水中運動の楽しさを経験するとともに、自身の健康維持に役立てる知識を学ぶことを目的とする。基本的な4泳法のストローク動作の理解や、水球、スキンダイビング、飛込などの基本スキルを学ぶ。生涯スポーツとしてアクアティックスポーツを安全に楽しむ能力を高める。
+  credits: '0.5'
+  data_update_date: '2024-04-04 10:32:18'
+  english_name: Applied Physical Education Swimming
+  enrollment_application: △
+  enrollment_requirements: ''
+  method: '3'
+  module: 秋AB
+  name: 応用体育水泳(秋)
+  period: 水3
+  remarks: I 男女別要素(ウェア). 男女別要素(接触). G科目. 対面
+  requirement_subject_name: 応用体育水泳(秋)
+  room: 屋内プール
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '2'
+  subject_code: '2217213'
+  teaching_staff: 山川 啓介
+- class_id: 0ALD507
+  class_outline: 情報理工学位プログラムの様々な研究分野の概観を得るとともに、自分の研究に関するプレゼンテーションを行う。
+  credits: '1.0'
+  data_update_date: '2024-01-09 08:27:44'
+  english_name: Seminar in Computer Science f
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 秋ABC
+  name: 情報理工前期特別演習f
+  period: 随時
+  remarks: 2023年度以前の秋入学者、および学位PLが認めた者のみ履修可。 対面(オンライン併用型)
+  requirement_subject_name: 情報理工前期特別演習f
+  room: 3B302,3B303,3B402,3B405
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '1'
+  subject_code: 0ALD507
+  teaching_staff: 情報理工学位プログラム・CS専攻担当教員
+- class_id: CB23741
+  class_outline: 情報通信技術の活用の意義について基本的な事項を扱った後に，情報通信技術を効果的に活用した学習指導や校務の推進の在り方について考察する。さらに，情報活用能力や情報モラルを育成するための指導法について，初等教育の各教科の特性を考慮しながら検討する。
+  credits: '1.0'
+  data_update_date: '2024-04-02 21:47:39'
+  english_name: Theory and Method of Education Using Information and Communication
+    Technology in Elementary School
+  enrollment_application: △
+  enrollment_requirements: ''
+  method: '1'
+  module: 夏季休業中
+  name: 初等情報通信技術を活用した教育の理論と方法
+  period: 集中
+  remarks: 8/27-28 詳細後日周知. 対面 2-6限
+  requirement_subject_name: 初等情報通信技術を活用した教育の理論と方法
+  room: 2A309
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: CB23741
+  teaching_staff: 小松 孝太郎
+- class_id: 02DT913
+  class_outline: 音声学・韻律に関する実験研究を紹介する。
+  credits: '1.0'
+  data_update_date: '2024-03-29 11:21:33'
+  english_name: Phonetics A
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: ''
+  name: 音声学A
+  period: ''
+  remarks: 西暦奇数年度開講。 0ABAG24と同一。 対面
+  requirement_subject_name: 音声学A
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1・2
+  subject_code: 0ABAG24
+  teaching_staff: ''
+- class_id: '6522102'
+  class_outline: データサイエンスの基礎的概念を理解し,コンピュータを利用した基礎的なデータ分析技術を学ぶ.データの収集,データの管理,データの可視化,データの分析を通じて,データの理解と活用の手法を実践的に修得する.先端的なデータサイエンスの事例に触れ,社会におけるデータの具体的な活用について理解する.
+  credits: '2.0'
+  data_update_date: '2024-03-19 11:55:03'
+  english_name: Data Science
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 通年
+  name: データサイエンス
+  period: 応談
+  remarks: スクリーンリーダ等を用いた実習を行う.履修制限あり. 本科目は事前に許可された学生のみ履修可能．履修を希望する場合は必ず支援室に申し出ること．
+    対面
+  requirement_subject_name: データサイエンス
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '1'
+  subject_code: '6501102'
+  teaching_staff: 共通科目「情報」担当教員
+- class_id: FCC4111
+  class_outline: 宇宙を構成している主要天体の構造と性質を学習することによって、宇宙を理解する。具体的には、星間物質、銀河系、銀河、銀河団、活動的銀河、宇宙の大規模構造、重力レンズなどを学ぶ。
+  credits: '1.0'
+  data_update_date: '2024-03-25 08:47:37'
+  english_name: Astrophysics
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: 春AB
+  name: 宇宙物理学
+  period: 金4
+  remarks: 平成24年度までの「宇宙物理学II(FC14201)」を履修済みの者は履修できない。 対面
+  requirement_subject_name: 宇宙物理学II
+  room: 1E302
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '4'
+  subject_code: FC14201
+  teaching_staff: 久野 成夫
+- class_id: 02BN081
+  class_outline: 3年次生対象科目。材料物性分野の各研究課題について教員指導の下、実験を行う。合同セミナーでは、他受講生のプレゼンテーションを聴講する。各研究課題の博士論文予備審査を行い、最終的に承認されれば博士論文を作成し、博士論文公聴会を開く。
+  credits: '3.0'
+  data_update_date: '2024-03-22 18:12:04'
+  english_name: Research in Materials Physics and Engineering VB
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 春ABC
+  name: 材料物性特別研究VB
+  period: 随時
+  remarks: 秋入学者向け 0BJNC52と同一
+  requirement_subject_name: 材料物性特別研究VB
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: 02BN081
+  teaching_staff: 材料物性分野教員(後期)
+- class_id: 0AND365
+  class_outline: リモートセンシング(大気や宇宙からの地球表面の観測)は、環境の監視と評価のための強力なツールである。この技術の原理、有用性、可能性を学ぶ。前提知識として、学部レベルの初等物理学、数学、地理学を学んでおくこと。
+  credits: '1.0'
+  data_update_date: '2023-02-07 16:07:20'
+  english_name: Remote Sensing
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: 春AB
+  name: Remote Sensing
+  period: 木5
+  remarks: 原則的に英語で実施する。状況に応じてオンラインで実施。 英語で授業。
+  requirement_subject_name: Environmental Remote Sensing [English Class] (環境リモートセンシング)
+  room: 理科系B107
+  short_term_students_application: ''
+  short_term_students_requirements: ''
+  standard_course_year: 1・2
+  subject_code: 01AD306
+  teaching_staff: 奈佐原 顕郎
+- class_id: XJ10012
+  class_outline: 漢字の字形の構造性を理解し、部首、音符などが識別できる。漢字の訓読みと音読みがわかる。日常生活および学生生活においてよく目にする漢字を調べたり、覚え方を工夫したりすることができる。(BKB
+    L11-22)
+  credits: '-'
+  data_update_date: '2024-03-25 12:05:36'
+  english_name: Kanji (Beginner) 2-1A
+  enrollment_application: ×
+  enrollment_requirements: 備考に記載
+  method: '2'
+  module: 春AB
+  name: 補講漢字2-1A
+  period: 月4
+  remarks: 外国人留学生が受講できる。ただし、特別聴講学生（学群）は受講不可。受講人数制限あり。 対面 詳細は授業内で、またはmanabaで周知する。
+  requirement_subject_name: 初級漢字前期K200-1A
+  room: 9P102
+  short_term_students_application: △
+  short_term_students_requirements: 備考に記載
+  standard_course_year: 1 - 6
+  subject_code: XJ10012
+  teaching_staff: 三谷 絵里
+- class_id: 0ANB203
+  class_outline: 農業科学関連分野の優れた著書や学術論文等を収集・講読し、既存研究の内容を理解し専門知識を深めるとともに、その研究成果を適切に評価し、自らの視点で科学的・論理的に考察する能力を養う。参考書・参考資料等については、農業科学に関する国際的に著名な雑誌、専門書を紹介する。授業は、下記の計画で進める。
+    (1) 研究テーマに関連した優れた著書や学術論文等の収集・講読、(2) 研究テーマに関する研究動向の把握、(3) 論文紹介
+  credits: '2.0'
+  data_update_date: '2024-03-19 18:30:20'
+  english_name: Seminar in Agricultural Sciences IIS
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 春ABC
+  name: 農業科学演習IIS
+  period: 応談
+  remarks: 研究室
+  requirement_subject_name: 農業科学演習IIS
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '2'
+  subject_code: 0ANB203
+  teaching_staff: 石井 敦,田村 憲司,上條 隆志,浅野 眞希,杉本 卓也
+- class_id: BB32352
+  class_outline: 政治意識、政治参加、社会運動、市民社会、権力構造などからテーマを選び、主として現代日本を対象としつつ、政治と社会との接点で生じる諸現象について議論する。あわせて、政治学や社会学で用いる分析手法についても理解を深める。
+  credits: '2.0'
+  data_update_date: '2024-03-29 15:27:20'
+  english_name: Seminar on Political Sociology I
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 春AB秋AB
+  name: 政治社会学演習I
+  period: 木4
+  remarks: 対面 原則として対面。状況次第でオンライン（同時双方向型）
+  requirement_subject_name: 政治社会学演習I
+  room: 1C305
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: BB32352
+  teaching_staff: 山本 英弘
+- class_id: AB95J12
+  class_outline: 言語学の論文を英語で書くための訓練を行う(基礎編)。
+  credits: '1.0'
+  data_update_date: '2024-03-22 10:38:47'
+  english_name: Thesis-Writing in English Linguistics (Seminar)-a
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 春AB
+  name: 英語学論文演習-a
+  period: 月4
+  remarks: 履修制限を設けることがある。 対面
+  requirement_subject_name: 英語学論文演習-a
+  room: 1C304
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: AB95J12
+  teaching_staff: 矢澤 翔
+- class_id: HE30033
+  class_outline: 生理活性物質とその作用機序について理解し,薬物の作用機序について,実習を通して学ぶ。また、医薬品開発における臨床試験のプロセス、重要性を、ロールプレイを通して学ぶ。
+  credits: '1.0'
+  data_update_date: '2024-03-29 16:22:48'
+  english_name: Practice of Clinical Pharmacology
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '3'
+  module: 秋C
+  name: 臨床薬理学実習
+  period: 月・金4,5
+  remarks: 医療科学類学生に限る。 詳細後日周知. 実務経験教員. 対面
+  requirement_subject_name: 臨床薬理学実習
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: HE30033
+  teaching_staff: 大林 典彦,橋本 幸一,町野 毅,山田 武史,大石 陽
+- class_id: 02DSA23
+  class_outline: 旧約聖書研究．翻訳受容史を含めた旧約聖書テキストについて，最近の研究動向を注視しながら文献学的に検討する．
+  credits: '1.0'
+  data_update_date: '2024-03-05 20:08:21'
+  english_name: Studies in Classical Studies (2A)
+  enrollment_application: ''
+  enrollment_requirements: 受講前に授業担当教員に連絡し受講許可を得る事
+  method: '2'
+  module: ''
+  name: 古典古代学研究(2A)
+  period: ''
+  remarks: 西暦奇数年度開講。 0ABAE23と同一。 対面
+  requirement_subject_name: 古典古代学研究(2A)
+  room: ''
+  short_term_students_application: △
+  short_term_students_requirements: 受講前に授業担当教員に連絡し受講許可を得る事
+  standard_course_year: 1・2
+  subject_code: 0ABAE23
+  teaching_staff: ''
+- class_id: '6513102'
+  class_outline: データサイエンスの基礎的概念を理解し,コンピュータを利用した基礎的なデータ分析技術を学ぶ.データの収集,データの管理,データの可視化,データの分析を通じて,データの理解と活用の手法を実践的に修得する.先端的なデータサイエンスの事例に触れ,社会におけるデータの具体的な活用について理解する.
+  credits: '2.0'
+  data_update_date: '2024-03-19 11:55:01'
+  english_name: Data Science
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 秋AB
+  name: データサイエンス
+  period: 水1,2
+  remarks: 物理対象 対面
+  requirement_subject_name: データサイエンス
+  room: 学術情報メディアセンターB205
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '1'
+  subject_code: '6501102'
+  teaching_staff: 鹿野 豊
+- class_id: 0BJBB52
+  class_outline: 後期課程3年次生を対象に、VAを踏まえてセミナー等で代数学の博士論文作成の指導を行う。
+  credits: '3.0'
+  data_update_date: '2024-03-22 17:37:40'
+  english_name: Research in Algebra VB
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '4'
+  module: 春ABC
+  name: 代数学特別研究VB
+  period: 随時
+  remarks: 02BH111と同一。 秋入学者向け
+  requirement_subject_name: 代数学特別研究VB
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: 0BJBB52
+  teaching_staff: 秋山 茂樹,佐垣 大輔,増岡 彰,カーナハン スコット ファイレイ,木村 健一郎,三河 寛,金子 元,三原 朋樹
+- class_id: 0BJMD52
+  class_outline: 3年次生対象科目。物質化学・バイオ分野の各研究課題について教員指導の下、実験を行う。合同セミナーでは、他受講生のプレゼンテーションを聴講する。各研究課題の博士論文予備審査を行い、最終的に承認されれば博士論文を作成し、博士論文公聴会を開く。
+  credits: '3.0'
+  data_update_date: '2024-03-22 17:44:55'
+  english_name: Research in Chemistry and Engineering of Materials and Biomaterials
+    VB
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 秋ABC
+  name: 物質化学・バイオ特別研究VB
+  period: 随時
+  remarks: 02BN102と同一
+  requirement_subject_name: 物質化学・バイオ特別研究VB
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: 02BN101
+  teaching_staff: 物質化学・バイオ分野教員(後期)
+- class_id: CB23252
+  class_outline: 数学教科書、国内外の学力調査問題の分析及び討議を通して、数学教育のカリキュラム、授業、学力評価、教材開発等に関する理解を深める。
+  credits: '1.0'
+  data_update_date: '2024-04-02 21:47:38'
+  english_name: Seminar on Mathematics Education
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 春AB
+  name: 数学教育論演習
+  period: 木3
+  remarks: 対面
+  requirement_subject_name: 数学教育論演習
+  room: 2A408
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: CB23252
+  teaching_staff: 清水 美憲
+- class_id: FCC3154
+  class_outline: 巨視的な現象(熱平衡状態の熱力学的現象)を記述する微視的な理論体系を、ニュートン力学や量子力学から議論を始めて「手作り」で構築する。授業内容は、熱力学の復習、期待値と母関数、位相空間とリゥヴィユ方程式、アンサンブル(集団)の導入とリゥヴィユの定理、量子系のアンサンブル、エントロピー、エルゴードの問題、ミクロ・カノニカル集団、カノニカル集団、グランド・カノニカル集団、量子系の統計力学(アインシュタイン・モデル、理想ファルミ気体と電子比熱、理想ボーズ気体とボーズ・アインシュタイン凝縮)である。講義に加え、充分な演習的学習を行う。
+  credits: '3.0'
+  data_update_date: '2024-03-25 08:47:41'
+  english_name: Statistical mechanics I
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '4'
+  module: 春ABC
+  name: 統計力学I
+  period: 月・水2
+  remarks: 令和2年度までの「統計力学1」(FCC3044)を履修済みのものは履修できない。 対面
+  requirement_subject_name: 統計力学I
+  room: 1E303
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: FCC3154
+  teaching_staff: 都倉 康弘,吉田 恭
+- class_id: AC60F82
+  class_outline: 日本文化について、とくに伝統文化について、おもに文献資料により、その実態について考察していく。和本リテラシーについても習得する。
+  credits: '1.0'
+  data_update_date: '2024-03-28 18:03:34'
+  english_name: Seminar in Japanese Studies IX
+  enrollment_application: ''
+  enrollment_requirements: 受講前に授業担当教員に連絡し受講許可を得る事
+  method: '2'
+  module: ''
+  name: 日本研究演習IX
+  period: ''
+  remarks: 西暦奇数年度開講。 対面
+  requirement_subject_name: 日本研究演習IX
+  room: ''
+  short_term_students_application: △
+  short_term_students_requirements: 受講前に授業担当教員に連絡し受講許可を得る事
+  standard_course_year: 2 - 4
+  subject_code: AC60F82
+  teaching_staff: ''
+- class_id: 0AL5402
+  class_outline: コンピュータサイエンス分野の最近の重要な課題について、その分野における専門家が最新の動向や成果などについて講義を行う。
+  credits: '1.0'
+  data_update_date: '2024-03-14 18:34:02'
+  english_name: Topics in Computational Science I
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '1'
+  module: 春C
+  name: コンピュータサイエンス英語講義I
+  period: 集中
+  remarks: 英語で集中講義。 英語で授業。 対面
+  requirement_subject_name: 計算科学特別講義I Topics in Computational Science I
+  room: 総合B108
+  short_term_students_application: ''
+  short_term_students_requirements: ''
+  standard_course_year: 1・2
+  subject_code: 01CH751
+  teaching_staff: アランニャ, クラウス,BOGDANOVA ANNA
+- class_id: 02BJ867
+  class_outline: 博士論文のテーマを決定する。テーマを探すための先行研究の文献による調査、ゼミ・輪読などを行い、情報を収集する。研究の進行状況を発表し、関連分野の動向などをまとめ、そこからテーマ(博士論文研究計画)の提案を行う。それをふまえ、現在進行中あるいは近い将来に開始する加速器科学分野の研究に従事する。必要に応じて、高エネルギー加速器研究機構(KEK)等の大型加速器装置を持つ外部機関に滞在する。
+  credits: '3.0'
+  data_update_date: '2024-03-22 18:01:42'
+  english_name: Research on Accelerator Science IIIA
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '3'
+  module: 春ABC
+  name: 加速器科学特別研究IIIA
+  period: 随時
+  remarks: 0BJCH21と同一。
+  requirement_subject_name: 加速器科学特別研究IIIA
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '1'
+  subject_code: 02BJ867
+  teaching_staff: 加速器科学コース担当教員(後期)
+- class_id: 31HC122
+  class_outline: 「一般学術目的の英語」の枠組みで、実践的リーディング方略を中心に学ぶことができる。これにより、言語としての英語を深く理解するとともに、大学生として学術的及び学際的素養を養い、思考力・判断力・表現力を向上させることができる。
+  credits: '1.0'
+  data_update_date: '2024-03-27 16:09:14'
+  english_name: English Reading Skills I
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: ''
+  name: English Reading Skills I
+  period: ''
+  remarks: 「生物、地球、数学、物理、化学、創成、総学3組」 12班対象 2024年度開講せず。 G科目. 対面(オンライン併用型)
+  requirement_subject_name: English Reading Skills I
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '1'
+  subject_code: 31HA002
+  teaching_staff: ''
+- class_id: FA013A1
+  class_outline: 1変数関数の微分法,積分法を中心に講述する.また,適宜演習を行う.
+  credits: '1.0'
+  data_update_date: '2024-03-29 15:11:14'
+  english_name: Calculus 1
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '1'
+  module: 春BC
+  name: 微積分1
+  period: 月2
+  remarks: 履修する学生は事前登録のメニューから科目番号FA01311を選択して登録すること.地球学類の学生(2024年度以降入学者)はこのクラスを受講すること.履修条件はFA01311の※と同じ.
+    専門導入科目(事前登録対象). 対面
+  requirement_subject_name: 微積分1
+  room: 1D204
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '1'
+  subject_code: FA01301
+  teaching_staff: 三河 寛,秋山 茂樹
+- class_id: 0ATC115
+  class_outline: 視機能の低下の要因となる病理面と心理面及び生理面の特徴並びにそれらの相互作用について理解し、幼児、児童又は生徒一人一人の視知覚や触知覚及び認知の特性を把握することを理解するとともに、家庭や医療機関との連携について理解する。視機能の低下の要因となる病理面と心理面及び生理面の特徴並びにそれらの相互作用や、観察や検査を通して、見え方に困難のある幼児、児童又は生徒一人一人の視知覚や触知覚及び認知の特性把握、さらに、家庭や医療機関との連携の重要性について理解する。
+  credits: '2.0'
+  data_update_date: '2024-03-29 10:51:54'
+  english_name: Psychology, Physiology and Pathology of Persons with Visual Impairments
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '1'
+  module: 春ABC
+  name: 視覚障害者の心理・生理・病理
+  period: 応談
+  remarks: 令和５年度以降入学の学生に限る 実務経験教員. 対面(オンライン併用型)
+  requirement_subject_name: 視覚障害者の心理・生理・病理
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1・2
+  subject_code: 0ATC115
+  teaching_staff: 柿澤 敏文,佐島 毅
+- class_id: 0AJG431
+  class_outline: 化学と生物学の基礎知識に基づき、核酸と遺伝子の基礎、酵素および核酸の増幅法、遺伝子工学(ベクター、クローニング、遺伝子組み換え産物の生産)などの生体関連化学の基礎について講義する。また、生体関連化学の応用として遺伝子診断(オリゴ核酸の合成法、シークエンシング、DNAチップ、一塩基多型)、遺伝子治療(ex
+    vivo/in vivo、ウイルスおよび非ウイルスベクター、核酸医薬、アプタマー)およびDNAナノテクノロジー(ナノ構造体、情報変換デバイス、ナノマシン)などの先端技術についても講義する。
+  credits: '1.0'
+  data_update_date: '2024-03-22 17:33:20'
+  english_name: Chemical Biology A
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: 春AB
+  name: 生体関連化学A
+  period: 木1
+  remarks: 要望があれば英語で授業. オンライン(オンデマンド型)
+  requirement_subject_name: 生体関連化学A
+  room: ''
+  short_term_students_application: ''
+  short_term_students_requirements: ''
+  standard_course_year: 1・2
+  subject_code: 01BG081
+  teaching_staff: 大石 基
+- class_id: AE55B43
+  class_outline: 海外で実施される語学研修に参加し、外国語運用能力と異文化適応能力を育成する。ただし、対象となる語学研修は、学類で定める所定の基準を満たすもののみとする。
+  credits: '3.0'
+  data_update_date: '2024-03-22 22:02:54'
+  english_name: Language Studies Abroad IV
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '3'
+  module: 通年
+  name: 海外語学研修IV
+  period: 応談
+  remarks: 日本語・日本文化学類正規生に限る。履修にあたっては担当教員との相談を要する。
+  requirement_subject_name: 海外語学研修IV
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1 - 4
+  subject_code: AE55B43
+  teaching_staff: 日本語・日本文化学類長
+- class_id: XJ46012
+  class_outline: この授業には登録することはできません。
+  credits: '-'
+  data_update_date: '2022-08-10 17:12:11'
+  english_name: This is a qualification subject to register for Japanese Speaking
+    J520-A (Intermediate). Unrelated to course grade.
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '2'
+  module: 春ABC
+  name: 中級前期日本語話すJ520-Aに履修登録するための条件科目。成績とは無関係。
+  period: 集中
+  remarks: ''
+  requirement_subject_name: 中級前期日本語話すJ520-Aに履修登録するための条件科目。成績とは無関係。
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '?'
+  subject_code: XJ46012
+  teaching_staff: 加納 千惠子
+- class_id: 0AJEJ13
+  class_outline: ナノ化学における最近の進歩に関する総括的な講義と議論を通じて、当該分野の基礎的及び発展的な知識を学ぶ。修士論文の草稿の完成および最終原稿の作成に向けての指導を行う。研究倫理に関する指導も行う。
+  credits: '3.0'
+  data_update_date: '2024-03-22 17:31:25'
+  english_name: Research in Nano Chemistry IIB
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '3'
+  module: 秋ABC
+  name: Research in Nano Chemistry IIB
+  period: 随時
+  remarks: 01BD966と同一。 英語で授業。 対面
+  requirement_subject_name: Research in Nano Chemistry IIB
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '2'
+  subject_code: 01BD965
+  teaching_staff: 化学専攻担当教員(Nano Chemistry Course)
+- class_id: '1130202'
+  class_outline: 初年次において、大学と大学生活に関する理解を深め、広い視野に立った学問研究への動機付けを高め、キャリアプランを主体的に設計するための指導を行うとともに、教員と学生および学生間のコミュニケーションを深める。併せて、2
+    年次の移行までの学修について理解を深める。
+  credits: '1.0'
+  data_update_date: '2024-03-26 12:00:58'
+  english_name: First Year Seminar
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 春AB
+  name: ファーストイヤーセミナー
+  period: 木2
+  remarks: 総学第3類6クラス対象 CDP. 対面
+  requirement_subject_name: フレッシュマン・セミナー
+  room: 5C604
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '1'
+  subject_code: '1101102'
+  teaching_staff: 大林 典彦
+- class_id: 0ANC366
+  class_outline: 地理学的諸現象に関するデータを空間情報科学の利用によって取得・分析・解析する手法を学ぶ。自然環境的・人文現象的な空間データ(地図データ)ならびに属性データの取得および解析の方法を、屋外データ収集も取り入れた具体的なフィールドワークとデスクワークの組み合わせで修得する。そのための解説と実習を実施する。各自でデータを取得して地図化し、その解析をレポートに仕上げる過程によって、空間現象をデータ化して分析する方法を学ぶ。
+  credits: '1.0'
+  data_update_date: '2024-03-19 10:25:35'
+  english_name: Field and Laboratory Work in Geographical Information Science I
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '3'
+  module: 通年
+  name: 空間情報科学実験I
+  period: 応談
+  remarks: 対面
+  requirement_subject_name: 空間情報科学実験I
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1・2
+  subject_code: 0ANC366
+  teaching_staff: 日下 博幸,森本 健弘,松下 文経,山下 亜紀郎,ドアン グアン ヴァン
+- class_id: '6517302'
+  class_outline: データサイエンスの基礎的概念を理解し,コンピュータを利用した基礎的なデータ分析技術を学ぶ.データの収集,データの管理,データの可視化,データの分析を通じて,データの理解と活用の手法を実践的に修得する.先端的なデータサイエンスの事例に触れ,社会におけるデータの具体的な活用について理解する.
+  credits: '2.0'
+  data_update_date: '2024-03-19 11:55:05'
+  english_name: Data Science
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 秋AB
+  name: データサイエンス
+  period: 金1,2
+  remarks: 医学3班対象 対面
+  requirement_subject_name: データサイエンス
+  room: 4B212
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '1'
+  subject_code: '6501102'
+  teaching_staff: 川口 一画
+- class_id: AB62C81
+  class_outline: 日本近世?近代の倫理思想史を通観する。
+  credits: '1.0'
+  data_update_date: '2024-03-22 10:39:19'
+  english_name: History of Ethics IV-b
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: ''
+  name: 倫理思想史IV-b
+  period: ''
+  remarks: 西暦偶数年度開講。 2024年度開講せず。 対面
+  requirement_subject_name: 倫理思想史IV-b
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 2 - 4
+  subject_code: AB62C81
+  teaching_staff: ''
+- class_id: '9482001'
+  class_outline: 高等学校芸術科工芸における学習指導の基礎となる理論と方法をもとに演習を行う。
+  credits: '1.0'
+  data_update_date: '2024-03-25 14:26:18'
+  english_name: Practice of Teaching Handicraft
+  enrollment_application: △
+  enrollment_requirements: ''
+  method: '1'
+  module: 通年
+  name: 工芸科指導法演習
+  period: 随時
+  remarks: 西暦偶数年度開講。 実務経験教員. 対面
+  requirement_subject_name: 工芸科指導法演習
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 2・3
+  subject_code: '9482001'
+  teaching_staff: 箕輪 佳奈恵,直江 俊雄
+- class_id: YBE1122
+  class_outline: 種々のモチーフの写生をもとに日本画材料を使用した演習を通し、日本画の基本となるものの見方や、基礎的な表現技法の習得と材料の取り扱いについて学習する。
+  credits: '2.0'
+  data_update_date: '2024-03-25 19:34:52'
+  english_name: 'Studio Work: Japanese-style Painting ２'
+  enrollment_application: △
+  enrollment_requirements: ''
+  method: '2'
+  module: 秋AB
+  name: 日本画演習２
+  period: 火2,3
+  remarks: 「日本画基礎演習1、2」を履修済みであること 実務経験教員. 対面
+  requirement_subject_name: 日本画演習２
+  room: 6A311,6A408-1
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '2'
+  subject_code: YBE1122
+  teaching_staff: 諏訪 智美
+- class_id: CB22112
+  class_outline: 個性の伸張(個人の自由の拡大)と社会性の育成(社会の維持・発展を担う市民の育成)という、対立的要素を含んだ二つの教育目的をいかに両立させるか、という近代教育が抱えてきた課題について、現代の教育に関わるさまざまな問題を取り上げながら、考察していく。受講生各自が、関心のあるテーマから問題を見つけ、その問題を自ら、もしくは協働して、さまざまな側面から考えていく演習を行う。
+  credits: '1.0'
+  data_update_date: '2024-04-02 21:47:40'
+  english_name: Seminar on Philosophy of Education
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 秋AB
+  name: 教育哲学演習
+  period: 火3
+  remarks: 対面
+  requirement_subject_name: 教育哲学演習
+  room: 2A303
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: CB22112
+  teaching_staff: 平井 悠介
+- class_id: CE24031
+  class_outline: 聴覚障害児の読み書きの困難さの原点を探り、その教育的示唆を得るために、聴覚障害児のリテラシー基礎と実際に関する知識と理解を深める。
+  credits: '1.0'
+  data_update_date: '2024-03-29 12:27:19'
+  english_name: Literacy and Deafness
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: 春B
+  name: 聴覚障害とリテラシー
+  period: 集中
+  remarks: 6/15,6/16 対面 2-6限
+  requirement_subject_name: 聴覚障害とリテラシー
+  room: 2A410
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: CE24031
+  teaching_staff: 茂木 成友,鄭 仁豪
+- class_id: BB29832
+  class_outline: 法律学の重要な理念・概念・制度を比較法ならびに法制史の視点から検討する。
+  credits: '1.0'
+  data_update_date: '2024-01-10 09:26:35'
+  english_name: Seminar on Comparative Law and Legal History IV
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '2'
+  module: ''
+  name: 比較法史演習IV
+  period: ''
+  remarks: 西暦奇数年度開講。 対面
+  requirement_subject_name: 比較法史演習IV
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 3・4
+  subject_code: BB29832
+  teaching_staff: ''
+- class_id: 0ATV303
+  class_outline: 講義形式(学内)。中国で世界遺産に認定された雲岡石窟や龍門石窟を対象とする。この授業では、その中でも北魏時代(439年から534年)に開かれた石窟を取り上げる。窟形式や造像の様式、形式、また文様などの要素を様々な角度から分析し、それを総合的に考察することで評価を行う。それぞれの石窟がいかなる目的のために、またいかなる人々のために開かれたか、そのためにいかなる工夫がなされたかを明らかにする。そしてこの作業から抽出される、それぞれの石窟の特殊性に基づき、それに適した石窟の保存を考える能力を養成する。これにより、中国北魏時代の代表的な石窟に関する基礎的な知識を有し、その評価を基盤として活用など保護の方法を自らの研究と関連してできるようになる。
+  credits: '1.0'
+  data_update_date: '2024-01-17 21:12:00'
+  english_name: Art Heritage I
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: 春AB
+  name: 美術遺産論I
+  period: 火3
+  remarks: 対面. オンライン(オンデマンド型)
+  requirement_subject_name: 美術遺産論I
+  room: 人社B218
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1・2
+  subject_code: 01EC520
+  teaching_staff: 八木 春生
+- class_id: '6527502'
+  class_outline: データサイエンスの基礎的概念を理解し,コンピュータを利用した基礎的なデータ分析技術を学ぶ.データの収集,データの管理,データの可視化,データの分析を通じて,データの理解と活用の手法を実践的に修得する.先端的なデータサイエンスの事例に触れ,社会におけるデータの具体的な活用について理解する.
+  credits: '2.0'
+  data_update_date: '2024-03-19 11:54:52'
+  english_name: Data Science
+  enrollment_application: △
+  enrollment_requirements: ''
+  method: '2'
+  module: 秋AB
+  name: データサイエンス
+  period: 月5,6
+  remarks: 総学第3類C班対象 実務経験教員. 対面
+  requirement_subject_name: データサイエンス
+  room: 2D202,2D203
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '1'
+  subject_code: '6501102'
+  teaching_staff: 遠藤 結城
+- class_id: 0ATAD42
+  class_outline: 『芸文類聚』所収の作品を読む。
+  credits: '1.0'
+  data_update_date: '2024-03-19 12:52:14'
+  english_name: Seminar in Chinese Literature a
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '2'
+  module: ''
+  name: 中国文学演習a
+  period: ''
+  remarks: 西暦奇数年度開講。 対面
+  requirement_subject_name: 中国文学演習a
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1・2
+  subject_code: 0ATAD42
+  teaching_staff: ''
+- class_id: '1130162'
+  class_outline: 初年次において、大学と大学生活に関する理解を深め、広い視野に立った学問研究への動機付けを高め、キャリアプランを主体的に設計するための指導を行うとともに、教員と学生および学生間のコミュニケーションを深める。併せて、2
+    年次の移行までの学修について理解を深める。
+  credits: '1.0'
+  data_update_date: '2024-04-04 08:35:33'
+  english_name: First Year Seminar
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 春AB
+  name: ファーストイヤーセミナー
+  period: 火4
+  remarks: 総学第3類2クラス対象 CDP. 対面
+  requirement_subject_name: フレッシュマン・セミナー
+  room: 2C102
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '1'
+  subject_code: '1101102'
+  teaching_staff: 中村 顕
+- class_id: YAJ1022
+  class_outline: 立体加工の諸技法の内「シリコーンゴム・樹脂」をとり上げ,その素材の特質などを作品制作を通して理解しながら,造形感覚とスキルを養う。
+  credits: '2.0'
+  data_update_date: '2024-03-25 19:34:24'
+  english_name: 'Fundamental Studio Work: Modeling'
+  enrollment_application: △
+  enrollment_requirements: ''
+  method: '2'
+  module: 春AB
+  name: 立体加工基礎演習
+  period: 木5,6
+  remarks: 人数制限あり(25名) 初日から参加必須。 実務経験教員. 対面
+  requirement_subject_name: 立体加工基礎演習
+  room: 6B101
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1・2
+  subject_code: YAJ1022
+  teaching_staff: 小野 裕子
+- class_id: XJ56022
+  class_outline: この授業には登録することはできません。
+  credits: '-'
+  data_update_date: '2022-08-10 17:12:11'
+  english_name: This is a qualification subject to register for Japanese Speaking
+    J720-B (Pre-advanced). Unrelated to course grade.
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '2'
+  module: 秋ABC
+  name: 中級後期日本語話すJ720-Bに履修登録するための条件科目。成績とは無関係。
+  period: 集中
+  remarks: ''
+  requirement_subject_name: 中級後期日本語話すJ720-Aに履修登録するための条件科目。成績とは無関係。
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '?'
+  subject_code: XJ56012
+  teaching_staff: 加納 千惠子
+- class_id: FH34091
+  class_outline: 確率論の基礎及びマルコフ連鎖の概略を説明する.確率空間,確率変数,確率分布,条件付き確率,期待値,条件付き期待値,同時確率分布,確率変数の収束,大数の法則,中心極限定理,マルコフ連鎖等を説明する予定である.
+  credits: '2.0'
+  data_update_date: '2024-03-29 12:59:05'
+  english_name: Applied Probability
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: 春AB
+  name: 応用確率論
+  period: 木5,6
+  remarks: 数理工学モデル化エリア 対面(オンライン併用型) 対面（オンライン併用型）。期末試験は対面の実施予定。
+  requirement_subject_name: 応用確率論
+  room: 3A203
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 2 - 4
+  subject_code: FH31061
+  teaching_staff: Phung-Duc Tuan
+- class_id: AC60L02
+  class_outline: アジアの少数民族であるチベット民族の歴史・宗教・文化と、現代の少数民族問題、難民問題としてチベット民族が直面する問題を考察する。
+  credits: '1.0'
+  data_update_date: '2024-03-28 18:03:24'
+  english_name: Seminar in Asian Culture I
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '2'
+  module: ''
+  name: アジア文化論演習I
+  period: ''
+  remarks: AC60742の単位取得者は履修できない。 西暦奇数年度開講。 2024年度開講せず。 対面
+  requirement_subject_name: アジア文化論演習I
+  room: ''
+  short_term_students_application: ''
+  short_term_students_requirements: ''
+  standard_course_year: 2・3
+  subject_code: AC60L02
+  teaching_staff: ''
+- class_id: 34J2012
+  class_outline: 初修者を対象にしたこの中国語の授業では、基本文法(入門レベル)の重要項目を確認しながら、社会生活の場面に即した基礎的なコミュニケーション能力の修得を目指す。
+  credits: '1.0'
+  data_update_date: '2024-03-27 16:10:15'
+  english_name: Basic Chinese BI
+  enrollment_application: △
+  enrollment_requirements: ''
+  method: '2'
+  module: 春ABC
+  name: 基礎中国語BI
+  period: 水1
+  remarks: 比文・日日・社工・体育1・総学2組対象(学籍番号末尾1,2,3,4,5) 主に日本語で授業を行ないます。 G科目. 対面
+  requirement_subject_name: 基礎中国語BI
+  room: 1C403
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '1'
+  subject_code: 34J1012
+  teaching_staff: 呉 琪
+- class_id: 0AFL233
+  class_outline: 本演習は、刑事法の基礎を習得した者を対象に、模擬裁判を実施してその各段階に必要となる文書の起案を実際にして、その起案について講評して刑事裁判において必要とされる法律文書の作成に関する基礎的な知識を修得する。
+    模擬裁判を経験しつつ、その各段階で必要となる文書の内主要な文書を起案し、さらには証人尋問の準備と尋問等を受講者が実際に体験する。 これにより、初歩的な刑事裁判実務に対応できる能力を獲得することを到達目標とする。
+  credits: '1.0'
+  data_update_date: '2024-03-22 22:38:39'
+  english_name: Criminal Moot Court
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 春A
+  name: 刑事模擬裁判
+  period: 応談
+  remarks: 01NA162と同一。 対面
+  requirement_subject_name: 刑事模擬裁判
+  room: 5F504講義室
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: 01NA162
+  teaching_staff: 森田 憲右,井上 真,檜垣 直人
+- class_id: 0AJSC22
+  class_outline: 博士前期2年次において、他研究室の研究室セミナーに参加し、異なる専門領域の知識を身に付けるとともに、自身の研究の新しい展開に役立てる。異なる分野の研究者と積極的に対話して研究の情報を交換する。自身の研究についても積極的に発信する。さらに、異分野の実験手法、基礎理論、最先端技術および研究課題などを学ぶことによって、自身の研究を別の視点から見直し研究の新展開を図る。
+  credits: '1.0'
+  data_update_date: '2024-03-22 17:36:21'
+  english_name: Joint Seminar IIB
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 春ABC
+  name: Joint Seminar IIB
+  period: 随時
+  remarks: 英語で授業。 秋入学者向け. 対面
+  requirement_subject_name: Joint Seminar IIB
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '2'
+  subject_code: 0AJRC22
+  teaching_staff: 国際マテリアルズイノベーション学位プログラム担当教員
+- class_id: 01MB455
+  class_outline: ''
+  credits: '2.0'
+  data_update_date: '2024-03-04 09:32:39'
+  english_name: Synthetic Seminar on MSc Research a
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 秋ABC
+  name: Synthetic Seminar on MSc Research a
+  period: 応談
+  remarks: 演習科目
+  requirement_subject_name: Synthetic Seminar on MSc Research a
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '2'
+  subject_code: 01MB455
+  teaching_staff: 図書館情報学英語プログラム指導教員
+- class_id: 0ALA008
+  class_outline: '地域の未来の創生に関しての最新の知識・手法について講義や事例見学から学ぶ。地域未来創生に取り組む著名研究者による基調講演、地域未来創生事業に先進的に取り組む自治体・企業・組織を対象とする聞き取り調査などを通して知識を深め、地域未来創生のために必要な政策展開を理解し、自身の研究課題に反映させる。 '
+  credits: '1.0'
+  data_update_date: '2024-04-03 09:43:08'
+  english_name: Introduction to Strategic Frontiers for Regional Revitalization II
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: 春ABC
+  name: 地域未来創生概論II
+  period: 集中
+  remarks: 地域未来創生教育コースの学生のみ履修可 対面(オンライン併用型)
+  requirement_subject_name: 地域未来創生概論II
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '2'
+  subject_code: 0ALA008
+  teaching_staff: 繁野 麻衣子,藤川 昌樹,谷口 守
+- class_id: 0ATAF13
+  class_outline: 基礎数理学A・B・Cおよび現代数学特別研究A・B・Cの内容を前提として、数学の幅広く深い理解を目指す。いくつかの主題について専門的に講究し、併せて数学的内容の説明の仕方について学ぶため、学生の発表および発表後のレポートをもとにして数学のより進んだ話題を取り扱う。
+  credits: '1.0'
+  data_update_date: '2024-03-19 12:50:30'
+  english_name: Special Research in Modern Mathematics D
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '2'
+  module: 通年
+  name: 現代数学特別研究D
+  period: 応談
+  remarks: ''
+  requirement_subject_name: 現代数学特別研究D
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1・2
+  subject_code: 0ATAF13
+  teaching_staff: 木村 健一郎,竹山 美宏,川村 一宏
+- class_id: FF56421
+  class_outline: 本講義では、生体環境を理解し、生体環境下で利用する材料設計、特性や応用に関する講義を行う。
+  credits: '1.0'
+  data_update_date: '2024-03-22 20:06:05'
+  english_name: Biomaterials
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: 春C
+  name: 生体材料
+  period: 月・水1
+  remarks: 専門科目 選択科目 対面
+  requirement_subject_name: 生体材料
+  room: 3A305
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: FF56421
+  teaching_staff: 長崎 幸夫
+- class_id: 02CN054
+  class_outline: '本講座では、統計解析に機械学習を応用した統計的手法を紹介する。近年、計算技術の急速な向上とインターネット経由のデータ利用により、機械学習が注目されている。機械学習を応用した統計モデルの中には、人間の能力を超えるほど目覚ましく向上している場合もある。
+    本講座では、こうした最近の動向を、主に「教師あり機械学習」の一分野である回帰モデルを用いて解説する。 '
+  credits: '2.0'
+  data_update_date: '2024-03-20 09:44:09'
+  english_name: Special Lecture on Policy and Planning Sciences I
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '1'
+  module: 秋B
+  name: 社会工学特別講義I
+  period: 集中
+  remarks: The class will be taught in English, with optional explanation in Japanese.
+    0AL5115と同一。 The class will be held online.Open in the even academic years.
+  requirement_subject_name: 社会工学特別講義I
+  room: 3E404
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1 - 3
+  subject_code: 02CN054
+  teaching_staff: モヴシュク オレクサンダー
+- class_id: 02DT530
+  class_outline: 認知言語学・語用論研究・機能論研究など、現代英語をめぐる様々なアプローチの研究動向を探る。最新の言語学専門誌・論文集から選んだ論文をもとにした発表と討論を行なう。特に、文法と言語使用の関係を扱った論文を中心に行なう。
+  credits: '1.5'
+  data_update_date: '2024-03-05 20:08:24'
+  english_name: Seminar in English Semantics (5B)
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: ''
+  name: 英語意味論演習(5B)
+  period: ''
+  remarks: 2020年度より4年おきに開講。 オンライン(同時双方向型)
+  requirement_subject_name: 英語意味論演習(5B)
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1 - 5
+  subject_code: 02DT530
+  teaching_staff: ''
+- class_id: 02DJ395
+  class_outline: 経済系の教員が参加する演習形式の合同セミナーで、学生が博士論文の構想発表、研究進捗状況を発表する。教員全員から、多角的なコメントを受けることで、問題発見能力、より高いレベルの経済分析能力、プレゼン能力、コメント対応力を身につける。受講生は、データやモデル、分析結果や考察についてを発表し、経済系全教員から今後の研究について指導・助言を受けるとともに、学生ともディスカッションを行うことにより、研究水準の深化と質の向上を図る。
+  credits: '1.0'
+  data_update_date: '2024-03-05 20:09:01'
+  english_name: Special Seminar on Economics IB
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 秋AB
+  name: 経済学特別演習IB
+  period: 応談
+  remarks: 西暦偶数年度開講。 0BBC801と同一。 英語で授業。 履修希望者は担当教員と連絡をとること。授業形式はシラバスの「その他」欄で確認してください。
+  requirement_subject_name: 経済学特別演習AII
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1 - 3
+  subject_code: 0BBC801
+  teaching_staff: 内藤 久裕,黒川 義教,中野 優子,ユウ ゼンフェイ,松島 みどり
+- class_id: AB93E72
+  class_outline: 日本語学、特に日本語史にとって重要な文献資料、先行研究について紹介検討し、言語学・日本語学についての理解を深める。また、研究に際しての参考文献リスト作成、検討等、卒業論文作成への基礎情報についての演習を行うことがある。
+  credits: '1.0'
+  data_update_date: '2024-03-22 10:38:38'
+  english_name: Seminar in Japanese Linguistics III-a
+  enrollment_application: △
+  enrollment_requirements: ''
+  method: '2'
+  module: 春AB
+  name: 日本語学演習III-a
+  period: 月6
+  remarks: 対面(オンライン併用型)
+  requirement_subject_name: 日本語学演習III-a
+  room: 2D204
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '4'
+  subject_code: AB93E72
+  teaching_staff: 橋本 修
+- class_id: 0ATP506
+  class_outline: 発生運動学としてのスポーツ運動学の学問成立の経緯、基本概念、運動の分析法を講義して、運動の実践現場および研究においてもつスポーツ運動学の意義、価値の理解を深める。具体的には、体育・スポーツ領域において使われている運動の概念についての整理、運動をゲシュタルト(運動ゲシュタルト)として認識することの重要性、現場において取り上げられる動きの質の問題、実際の動きを取り上げる際に重要になる生命的な時空間の問題、そして、「できる」ということを考える際に不可欠な身体知の問題、その「できる」を支える「動感」の問題、動きの意味と価値の問題、スポーツ運動学と現象学の関係、などについて講義する。
+  credits: '1.0'
+  data_update_date: '2024-03-28 18:53:26'
+  english_name: Movement theory of Sport
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '1'
+  module: 春AB
+  name: スポーツ運動学
+  period: 木2
+  remarks: AT必修科目. 対面
+  requirement_subject_name: スポーツ運動学
+  room: 5C508
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '1'
+  subject_code: 01EH623
+  teaching_staff: 中村 剛
+- class_id: 0A00615
+  class_outline: 人間性を高める契機としてスポーツを位置づけ、その活動を通して逞しい精神を養う。年度の始まりならびに季節を踏まえて、春学期ならではの学修活動を行うことによって、教育目標の達成を目指す。コースは、各スポーツ種目の運動特性およびわが国の地域特性等を考慮して、ボディワーク、マリンスポーツ、ランニングの世界を各コースとして開設する。またこの場合、各コースは自身のスポーツ実践によって得られる実体験を基礎として学修活動を展開するため、実技を中心に行われる。
+  credits: '1.0'
+  data_update_date: '2024-03-22 13:41:21'
+  english_name: Physical Education IIb
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '3'
+  module: 春ABC
+  name: 大学院体育IIb
+  period: 応談
+  remarks: 対面
+  requirement_subject_name: 大学院体育IIb
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '2'
+  subject_code: 01ZZ788
+  teaching_staff: 高木 英樹,鍋倉 賢治
+- class_id: 0ATAA13
+  class_outline: 道徳教育学研究を行う上で素地となる知識や見方の獲得をめざす。具体的には、道徳教育学研究として本質的な問いや考え方などについて学ぶために有益と思われる著書や論文等を選定し、それを精読することで改めて道徳教育学分野における基礎的な用語の確認や道徳教育学研究として求められる問題などについて検討していく。
+  credits: '2.0'
+  data_update_date: '2024-03-29 13:20:55'
+  english_name: Advanced Lecture on Moral Education
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '1'
+  module: 春AB
+  name: 道徳教育学特講
+  period: 月3,4
+  remarks: 教室：人間系学系B棟B520
+  requirement_subject_name: 道徳教育学特講
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1・2
+  subject_code: 0ATAA13
+  teaching_staff: 川上 若奈
+- class_id: HC21231
+  class_outline: 高齢者の健康問題として、加齢による心身機能の変化と病態を理解し、高齢者の生活機能をアセスメントするための基礎を学ぶ
+  credits: '1.0'
+  data_update_date: '2024-03-27 17:54:06'
+  english_name: Aging & Health
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '1'
+  module: 春BC
+  name: 老化と健康
+  period: 月5
+  remarks: 2022年度以降入学生用 実務経験教員. 対面(オンライン併用型)
+  requirement_subject_name: 老化と健康
+  room: 4B214
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '2'
+  subject_code: HC21231
+  teaching_staff: 橋爪祐美,目 麻里子,医学医療系教員
+- class_id: FCC2403
+  class_outline: e-ラーニングシステムを使い、英語表現に慣れ親しむ。ヒヤリング能力、語彙力、表現力の養成を目指す。CEGLOCのeラーニングサーバを用いたオンライン形式とする。
+  credits: '1.0'
+  data_update_date: '2024-03-25 08:47:39'
+  english_name: English Seminar on Physics 1
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '3'
+  module: 秋AB
+  name: 科学英語I
+  period: 月2
+  remarks: 令和元年度までの「科学英語1」(FCC2603)を履修済みのものは履修できない。 対面 対面授業。ただし状況によってはオンラインに変更の可能性あり。
+  requirement_subject_name: 科学英語I
+  room: 1D301-1
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '2'
+  subject_code: FCC2403
+  teaching_staff: 橋本 幸男
+- class_id: AC61J31
+  class_outline: ロシア近代文化(ロシア語中級)
+  credits: '1.0'
+  data_update_date: '2024-03-28 18:03:35'
+  english_name: European and American Culture IV
+  enrollment_application: ''
+  enrollment_requirements: 受講前に授業担当教員に連絡し受講許可を得る事
+  method: '1'
+  module: ''
+  name: 欧米文化論IV
+  period: ''
+  remarks: 西暦奇数年度開講。 対面 欧米文化論IV(AC61631)ないしロシア言語文化特講b(AB98221)の単位取得者は履修できない。
+  requirement_subject_name: 欧米文化論IV
+  room: ''
+  short_term_students_application: △
+  short_term_students_requirements: 受講前に授業担当教員に連絡し受講許可を得る事
+  standard_course_year: 2・3
+  subject_code: AC61J31
+  teaching_staff: ''
+- class_id: 01PC405
+  class_outline: このコースの主な目的は, 国際学術会議に参加する経験を積むことにある. 学生は, アカデミック・ペーパーを学会に提出し, 発表する機会を得ることができる.
+    International Conference Seminar Iと異なり, International Conference Seminar IIに登録する学生は,
+    学会で研究発表を行う. 帰国後, 学生は出席したすべてのセッションについて, 書面によるレポートを提出するとともに、会議セッションの出席が合計12.5 時間を満たしていることが条件となる.
+    学生はまた, 学会で得た知識を自身の"キー・ラーニング"に反映するとともに, ビジネスプロジェクト、興味のある研究テーマだけでなく, 日常の仕事やクラスで貢献することが期待されている.
+  credits: '1.0'
+  data_update_date: '2024-03-27 20:44:07'
+  english_name: International Conference Seminar II
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '3'
+  module: 通年
+  name: International Conference Seminar II
+  period: 随時
+  remarks: 0AFM604と同一。 英語で授業。
+  requirement_subject_name: Overseas Conference Seminar II
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1・2
+  subject_code: 01PC405
+  teaching_staff: 礪波 亜希,平井 孝志,顧 俊堅,徐 ?,ベントン キャロライン,木野 泰伸,領家 美奈,Magnier-Watanabe Remy,Tan
+    Caroline S.L.
+- class_id: YBL0602
+  class_outline: 美術館,博物館,工房,各種企業などを訪ねて見学・演習を行う。
+  credits: '1.0'
+  data_update_date: '2024-03-25 19:34:35'
+  english_name: 'Field Work: Visual Communication Design'
+  enrollment_application: ''
+  enrollment_requirements: ''
+  method: '2'
+  module: 通年
+  name: 学外演習(ビジュアルデザイン領域)
+  period: 随時
+  remarks: 実務経験教員. 対面
+  requirement_subject_name: 学外演習(ビジュアルデザイン領域)
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: '3'
+  subject_code: YBL0602
+  teaching_staff: 田中 佐代子,原 忠信,山本 美希,MCLEOD Roderick
+- class_id: 0BTNE27
+  class_outline: ヒトの生命現象の制御機構や疾患の病理発生機序について、分子生物学的な概念を基盤に個体、細胞レベルで理解し、疾患の予防・治療法の開発研究を行っている最新の原著論文を抄読し、研究目的、方法、結果について理解し、当該研究の意義、課題について討論する。授業は研究グループ単位で行い、学生は自らが研究指導を受ける研究グループを含め、複数のグループの授業に出席する。各グループのキーワードを以下に示す。I,IIでは異なるトピックスを扱う。また、自らの所属グループ以外のグループとして、I,IIで異なるグループを選択することができる。
+    ・感染生物学(細菌学、分子ウィルス学、分子寄生虫学) ・実験病理学 ・モデル動物学 ・診断病理学 ・免疫制御医学 ・再生幹細胞生物学 ・医工学 ・神経生理学
+    ・医学物理学 ・血管マトリクス生物学 ・幹細胞治療学 ・計算創薬
+  credits: '2.0'
+  data_update_date: '2024-04-03 18:05:59'
+  english_name: Seminar in Human Medical Biology II
+  enrollment_application: ×
+  enrollment_requirements: ''
+  method: '2'
+  module: 秋ABC
+  name: システム統御医学演習II
+  period: 応談
+  remarks: ''
+  requirement_subject_name: システム統御医学演習II
+  room: ''
+  short_term_students_application: ×
+  short_term_students_requirements: ''
+  standard_course_year: 1・2
+  subject_code: 02EW414
+  teaching_staff: 森川 一也,水野 聖哉,加藤 光保,松原 大祐,渋谷 和子,大根田 修,三好 浩稔,川口 敦史,Ho Kiong,小金澤 禎史,熊田
+    博明,榮 武二,柳沢 裕美,木村 健一,広川 貴次
