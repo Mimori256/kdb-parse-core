@@ -227,7 +227,7 @@ def convert_csv_to_twinc_json(
             for p in period_str_array:
                 days = [
                     WEEKDAY_LIST.index(x)
-                    for x in re.sub("[0-9\-]", "", p).split("・")
+                    for x in re.sub("[0-9\\-]", "", p).split("・")
                     if x in WEEKDAY_LIST
                 ]
 
@@ -235,7 +235,7 @@ def convert_csv_to_twinc_json(
                     day_array = days
 
                 time_array: List[int] = []
-                time_str = re.sub("[^0-9\-]", "", p)
+                time_str = re.sub("[^0-9\\-]", "", p)
 
                 if time_str.find("-") > -1:
                     time_str_array = time_str.split("-")
