@@ -63,16 +63,12 @@ response = session.post(do_url, data=csv_post)
 with open("tmp.csv", "w", encoding="utf-8") as fp:
     fp.write(response.text)
 
-# compare file
-try:
-    original = open("kdb.csv", "r", encoding="utf-8")
-except:
+if not os.path.exists("kdb.csv"):
     os.rename("tmp.csv", "kdb.csv")
     print("CSV updated")
     sys.exit()
 
-
-
+original = open("kdb.csv", "r", encoding="utf-8")
 changed = open("tmp.csv", "r", encoding="utf-8")
 
 # no change
