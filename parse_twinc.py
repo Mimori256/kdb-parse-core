@@ -10,7 +10,9 @@ The CSV file should have the following columns:
 - Room
 - Description
 
-The script reads the CSV file, filters out classes that are not opened in the current year, and parses the module and period information for each class. It then generates a JSON file with the parsed data.
+The script reads the CSV file, filters out classes that are not opened in the
+current year, and parses the module and period information for each class. It
+then generates a JSON file with the parsed data.
 
 Usage: python parse_twinc.py <lang>
 - <lang>: Language code, either 'ja' for Japanese or 'en' for English.
@@ -24,7 +26,7 @@ import re
 import sys
 import csv
 from dataclasses import dataclass, field, asdict
-from typing import List, Literal, TypedDict, Dict
+from typing import List, Literal, TypedDict
 import logging
 from subject_dataclass import Subject
 
@@ -100,7 +102,8 @@ def parsed_module(terms: Terms) -> List[List[str]]:
 
 def check_table(table: List[bool], season: Literal["春", "秋"]) -> str:
     """
-    This function checks the module table and returns the corresponding module string.
+    This function checks the module table and returns the corresponding module
+    string.
 
     Args:
         table (List[bool]): The module table.
@@ -120,7 +123,8 @@ def check_table(table: List[bool], season: Literal["春", "秋"]) -> str:
 
 def subjects_from_csv(input_file: str) -> List[Subject]:
     """
-    This function reads the CSV file and creates a list of Subject dataclass instances.
+    This function reads the CSV file and creates a list of Subject dataclass
+    instances.
 
     Args:
         input_file (str): The input CSV file.
@@ -164,7 +168,8 @@ def convert_csv_to_twinc_json(lang: Lang, input_file: str, output_file: str) -> 
     """This function converts the CSV file to a JSON file in the TwinC format."""
     subjects = subjects_from_csv(input_file=input_file)
     classes = {
-        subject.class_id: subject_to_class_dict(lang, subject) for subject in subjects
+        subject.class_id: asdict(subject_to_class(lang, subject))
+        for subject in subjects
     }
 
     with open(output_file, "w", encoding="utf_8") as f:
@@ -173,7 +178,7 @@ def convert_csv_to_twinc_json(lang: Lang, input_file: str, output_file: str) -> 
         logging.info("Successfully converted CSV to JSON.")
 
 
-def subject_to_class_dict(lang: Lang, subject: Subject) -> Dict[str, str]:
+def subject_to_class(lang: Lang, subject: Subject) -> Class:
     """
     This function converts a Subject instance to a dictionary.
 
@@ -234,7 +239,7 @@ def subject_to_class_dict(lang: Lang, subject: Subject) -> Dict[str, str]:
     period_ = [parse_timetable(x) for x in boolean_periods]
     parsed_terms = parsed_module(terms) if terms != [[]] else [["通年"]]
 
-    cls = Class(
+    return Class(
         class_id=subject.class_id,
         name=subject.name if lang == "ja" else subject.english_name,
         module=parsed_terms,  # Module is stored in the 'Module' field
@@ -244,8 +249,6 @@ def subject_to_class_dict(lang: Lang, subject: Subject) -> Dict[str, str]:
         ),  # Room is stored in the 'Room' field
         description=subject.remarks,  # Description is stored in the 'Remarks' field
     )
-
-    return asdict(cls)
 
 
 def raw_module_to_terms(raw_module: str) -> Terms:
