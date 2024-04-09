@@ -22,8 +22,11 @@ and 'kdb_twinc_en.json' for English.
 import json
 import re
 import sys
-from dataclasses import dataclass
-from typing import List, Literal, TypedDict
+import csv
+from dataclasses import dataclass, field, asdict
+from typing import List, Literal, TypedDict, Dict
+import logging
+from subject_dataclass import Subject
 
 WEEKDAY_LIST = ("月", "火", "水", "木", "金", "土", "日")
 SEASONS = ("春", "秋")
@@ -33,7 +36,7 @@ FALL_MODULE_LIST = ("秋A", "秋B", "秋C")
 SPECIAL_MODULE_LIST = ("夏季休業中", "春季休業中")
 
 
-class Table(TypedDict):
+class PeriodTable(TypedDict):
     """Type definition for the table data."""
 
     period: List[List[bool]]
@@ -42,55 +45,57 @@ class Table(TypedDict):
     asneeded: bool
 
 
+Lang = Literal["ja", "en"]
+Terms = List[List[str]]
+
+
+@dataclass
 class Class:
-    def __init__(self, class_id, name, module, period_tmp, room, description):
-        self.class_id = class_id
-        self.name = name
-        self.module = module
-        self.period_tmp = period_tmp
-        self.room = room
-        self.description = description
-        self.terms = []
-        self.period = []
+    class_id: str
+    name: str
+    description: str
+    module: List[List[str]] = field(default_factory=list)
+    period: List[List[str]] = field(default_factory=list)
+    room: str = field(default=" ")  # デフォルト値を指定
 
-    def as_json(self):
-        return {
-            "class_id": self.class_id,
-            "name": self.name,
-            "module": self.terms,
-            "period": self.period,
-            "room": self.room,
-            "description": self.description,
-        }
 
-    def parsed_module(self):
-        module = self.terms
+def parsed_module(terms: Terms) -> List[List[str]]:
+    """
+    This function parses the module list and returns a list of module strings.
 
-        for i, v in enumerate(module):
-            res = []
-            special_module_list = []
-            spring_table, fall_table = [False, False, False], [False, False, False]
+    Args:
+        terms (Terms): The module list.
 
-            for _, w in enumerate(v):
-                if w in SPRING_MODULE_LIST:
-                    spring_table[SPRING_MODULE_LIST.index(w)] = True
-                elif w in FALL_MODULE_LIST:
-                    fall_table[FALL_MODULE_LIST.index(w)] = True
-                # 夏季休業中 or 春季休業中
-                else:
-                    special_module_list.append(w)
+    Returns:
+        List[List[str]]: A list of module strings.
+    """
+    module = terms
 
-            if any(spring_table):
-                res.append(check_table(spring_table, "春"))
-            if any(fall_table):
-                res.append(check_table(fall_table, "秋"))
+    for i, v in enumerate(module):
+        res = []
+        special_module_list = []
+        spring_table, fall_table = [False, False, False], [False, False, False]
 
-            for element in special_module_list:
-                res.append(element)
+        for _, w in enumerate(v):
+            if w in SPRING_MODULE_LIST:
+                spring_table[SPRING_MODULE_LIST.index(w)] = True
+            elif w in FALL_MODULE_LIST:
+                fall_table[FALL_MODULE_LIST.index(w)] = True
+            # 夏季休業中 or 春季休業中
+            else:
+                special_module_list.append(w)
 
-            module[i] = res
+        if any(spring_table):
+            res.append(check_table(spring_table, "春"))
+        if any(fall_table):
+            res.append(check_table(fall_table, "秋"))
 
-        return module
+        for element in special_module_list:
+            res.append(element)
+
+        module[i] = res
+
+    return module
 
 
 def check_table(table: List[bool], season: Literal["春", "秋"]) -> str:
@@ -113,41 +118,30 @@ def check_table(table: List[bool], season: Literal["春", "秋"]) -> str:
     return season + "".join([x for x, y in zip(["A", "B", "C"], table) if y])
 
 
-def create_class_list(input_file: str, name_field_number: int) -> List[Class]:
+def subjects_from_csv(input_file: str) -> List[Subject]:
+    """
+    This function reads the CSV file and creates a list of Subject dataclass instances.
 
-    with open(input_file, "r", encoding="utf_8") as f:
-        class_list = []
-        lines = f.readlines()
+    Args:
+        input_file (str): The input CSV file.
+        lang (Lang): The language code.
 
-        # Remove the header
-        lines.pop(0)
+    Returns:
+        List[Subject]: A list of Subject dataclass instances.
+    """
+    with open(input_file, mode="r", encoding="utf-8") as csv_file:
+        csv_reader = csv.DictReader(csv_file, fieldnames=Subject.CSV_HEADER)
+        next(csv_reader)  # Skip the header row
 
-        for line in lines:
-            tmp = line.split('"')
-            class_id = tmp[1]
-            name = tmp[name_field_number]
-            module = tmp[11]
-            period_tmp = tmp[13]
-            room = tmp[15]
-            description = tmp[21]
-
-            if room == "":
-                room = " "
-
-            # Remove classes that are not opened in this year
-            if not "" in set([class_id, name, module, period_tmp, room, description]):
-                class_list.append(
-                    Class(class_id, name, module, period_tmp, room, description)
-                )
-
-        return class_list
+        return [Subject.from_csv_row(row) for row in csv_reader]
 
 
 def create_timetable():
+    """This function creates an empty timetable."""
     return [[False] * 8 for _ in range(7)]
 
 
-def parse_timetable(table: Table) -> List[str]:
+def parse_timetable(table: PeriodTable) -> List[str]:
     blank_table = create_timetable()
 
     if table["period"] == blank_table:
@@ -166,117 +160,147 @@ def parse_timetable(table: Table) -> List[str]:
     ]
 
 
-def convert_csv_to_twinc_json(
-    name_field_number: int, input_file: str, output_file: str
-) -> None:
-    subject_map = {}
+def convert_csv_to_twinc_json(lang: Lang, input_file: str, output_file: str) -> None:
+    """This function converts the CSV file to a JSON file in the TwinC format."""
+    subjects = subjects_from_csv(input_file=input_file)
+    classes = {
+        subject.class_id: subject_to_class_dict(lang, subject) for subject in subjects
+    }
 
-    class_list = create_class_list(
-        input_file=input_file, name_field_number=name_field_number
+    with open(output_file, "w", encoding="utf_8") as f:
+        enc = json.dumps(classes, ensure_ascii=False, indent=2)
+        f.write(enc)
+        logging.info("Successfully converted CSV to JSON.")
+
+
+def subject_to_class_dict(lang: Lang, subject: Subject) -> Dict[str, str]:
+    """
+    This function converts a Subject instance to a dictionary.
+
+    Args:
+        lang (Lang): The language code.
+        subject (Subject): The Subject instance.
+
+    Returns:
+        Dict[str, str]: A dictionary containing the class information.
+    """
+    terms = raw_module_to_terms(subject.module)
+    boolean_periods: List[PeriodTable] = []
+
+    term_str_array = subject.period.split(" ")
+
+    for i, term in enumerate(term_str_array):
+        period_str_array = term.split(",")
+        day_array = []
+        boolean_periods.append(
+            {
+                "focus": term.find("集中") > -1,
+                "negotiable": term.find("応談") > -1,
+                "asneeded": term.find("随時") > -1,
+                "period": create_timetable(),
+            }
+        )
+
+        for p in period_str_array:
+            days = [
+                WEEKDAY_LIST.index(x)
+                for x in re.sub("[0-9\\-]", "", p).split("・")
+                if x in WEEKDAY_LIST
+            ]
+
+            if len(days) > 0:
+                day_array = days
+
+            time_array: List[int] = []
+            time_str = re.sub("[^0-9\\-]", "", p)
+
+            if time_str.find("-") > -1:
+                time_str_array = time_str.split("-")
+                start_time, end_time = map(int, time_str_array)
+                for j in range(start_time, end_time + 1, 1):
+                    time_array.append(j)
+
+            else:
+                if time_str != "":
+                    time_array.append(int(time_str))
+                else:
+                    time_array.append(0)
+
+            if len(time_str) > 0:
+                for day in day_array:
+                    for time in time_array:
+                        boolean_periods[i]["period"][day][time - 1] = True
+
+    period_ = [parse_timetable(x) for x in boolean_periods]
+    parsed_terms = parsed_module(terms) if terms != [[]] else [["通年"]]
+
+    cls = Class(
+        class_id=subject.class_id,
+        name=subject.name if lang == "ja" else subject.english_name,
+        module=parsed_terms,  # Module is stored in the 'Module' field
+        period=period_,
+        room=(
+            subject.room if subject.room != "" else " "
+        ),  # Room is stored in the 'Room' field
+        description=subject.remarks,  # Description is stored in the 'Remarks' field
     )
 
-    for course in class_list:
+    return asdict(cls)
 
-        term_groups = course.module.split(" ")
-        season = ""
 
-        for group_str in term_groups:
-            group = []
-            char_array = list(group_str)
+def raw_module_to_terms(raw_module: str) -> Terms:
+    """
+    This function converts the raw module string to a list of terms.
 
-            for char in char_array:
+    Args:
+        raw_module (str): The raw module string.
 
-                if char in SEASONS:
-                    season = char
+    Returns:
+        Terms: A list of terms.
+    """
+    term_groups = raw_module.split(" ")
+    season = ""
+    terms = []
 
-                if season != "":
-                    if char in ["A", "B", "C"]:
-                        if season == "春":
-                            no = 0
-                        else:
-                            no = 3
+    for group_str in term_groups:
+        group = []
+        char_array = list(group_str)
 
-                        if char == "A":
-                            no += 0
-                        elif char == "B":
-                            no += 1
-                        else:
-                            no += 2
-                        group.append(no)
+        for char in char_array:
+            if char in SEASONS:
+                season = char
 
-                    if char == "休":
-                        group.append(SEASONS.index(season) + 6)
-
-            module_group = [MODULE_LIST[x] for x in group]
-            course.terms.append(module_group)
-
-        term_str_array = course.period_tmp.split(" ")
-
-        for i, term in enumerate(term_str_array):
-            period_str_array = term.split(",")
-            day_array = []
-            course.period.append(
-                {
-                    "focus": term.find("集中") > -1,
-                    "negotiable": term.find("応談") > -1,
-                    "asneeded": term.find("随時") > -1,
-                    "period": create_timetable(),
-                }
-            )
-
-            for p in period_str_array:
-                days = [
-                    WEEKDAY_LIST.index(x)
-                    for x in re.sub("[0-9\\-]", "", p).split("・")
-                    if x in WEEKDAY_LIST
-                ]
-
-                if len(days) > 0:
-                    day_array = days
-
-                time_array: List[int] = []
-                time_str = re.sub("[^0-9\\-]", "", p)
-
-                if time_str.find("-") > -1:
-                    time_str_array = time_str.split("-")
-                    start_time = int(time_str_array[0])
-                    end_time = int(time_str_array[1])
-                    for j in range(start_time, end_time + 1, 1):
-                        time_array.append(j)
-
-                else:
-                    if time_str != "":
-                        time_array.append(int(time_str))
+            if season != "":
+                if char in ["A", "B", "C"]:
+                    if season == "春":
+                        no = 0
                     else:
-                        time_array.append(0)
+                        no = 3
 
-                if len(time_str) > 0:
-                    for day in day_array:
-                        for time in time_array:
-                            course.period[i]["period"][day][time - 1] = True
+                    if char == "A":
+                        no += 0
+                    elif char == "B":
+                        no += 1
+                    else:
+                        no += 2
+                    group.append(no)
 
-        course.period = [parse_timetable(x) for x in course.period]
+                if char == "休":
+                    group.append(SEASONS.index(season) + 6)
 
-        course.terms = course.parsed_module()
+        module_group = [MODULE_LIST[x] for x in group]
+        terms.append(module_group)
 
-        if course.terms == [[]]:
-            course.terms = [["通年"]]
-
-        subject_map[course.class_id] = course.as_json()
-
-    enc = json.dumps(subject_map, ensure_ascii=False, indent=2)
-    with open(output_file, "w", encoding="utf_8") as f:
-        f.write(enc)
-    print("complete")
+    return terms
 
 
 @dataclass
 class ParseTwincLang:
     """
-    Dataclass for storing the name field number and output file for a language.
+    Dataclass for storing output file for a language.
     """
 
-    name_field_number: int
+    lang: Lang
     output_file: str
 
 
@@ -284,17 +308,17 @@ if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage: python parse_twinc.py <lang>")
         sys.exit(1)
-    elif sys.argv[1] not in ["ja", "en"]:
+    elif (arg_lang := sys.argv[1]) not in ["ja", "en"]:
         print("Invalid language. Please specify 'ja' or 'en'.")
         sys.exit(1)
 
-    lang = {
-        "ja": ParseTwincLang(3, "kdb_twinc.json"),
-        "en": ParseTwincLang(31, "kdb_twinc_en.json"),
-    }[sys.argv[1]]
+    langs = {
+        "ja": ParseTwincLang("ja", "kdb_twinc.json"),
+        "en": ParseTwincLang("en", "kdb_twinc_en.json"),
+    }[arg_lang]
 
     convert_csv_to_twinc_json(
-        name_field_number=lang.name_field_number,
-        input_file="kdb.csv",
-        output_file=lang.output_file,
+        lang=langs.lang,
+        input_file="sample_data/kdb.csv",
+        output_file=langs.output_file,
     )

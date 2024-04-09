@@ -39,10 +39,10 @@ class TestCSVtoJSONConversion(unittest.TestCase):
             AssertionError: If the conversion result does not match the expected output.
 
         """
-        input_csv_path = "testdata/sample_kdb.csv"  # サンプルCSVファイル
-        output_json_path = "testdata/test_kdb.json"  # 出力JSONファイルのパス
+        input_csv_path = "sample_data/kdb.csv"  # サンプルCSVファイル
+        output_json_path = "test_data/kdb.json"  # 出力JSONファイルのパス
         expected_output_path = (
-            "testdata/sample_kdb.json"  # 期待される出力JSONファイルのパス
+            "sample_data/kdb.json"  # 期待される出力JSONファイルのパス
         )
 
         # 変換を実行
@@ -61,7 +61,7 @@ class TestCSVtoJSONConversion(unittest.TestCase):
         self.assertIsInstance(expected_data, dict)
 
         # 出力が期待される結果と一致することを確認
-        self.assertEqual(actual_data, expected_data)
+        self.assertDictEqual(actual_data, expected_data)
 
         # さらに詳細な検証を行う
         for class_id, info in actual_data.items():
@@ -69,7 +69,7 @@ class TestCSVtoJSONConversion(unittest.TestCase):
             self.assertIsInstance(info, list)
             self.assertEqual(len(info), 6)  # 科目情報の要素数が正しいか確認
 
-        # testdata/test_output.jsonを削除
+        # test_data/output.jsonを削除
         os.remove(output_json_path)
 
     def test_parse_structural(self):
@@ -86,9 +86,9 @@ class TestCSVtoJSONConversion(unittest.TestCase):
             AssertionError: If the conversion result does not match the expected output.
 
         """
-        input_csv_path = "testdata/sample_kdb.csv"
-        output_json_path = "testdata/test_kdb_structural_output.json"
-        expected_output_path = "testdata/sample_kdb_structural.json"
+        input_csv_path = "sample_data/kdb.csv"
+        output_json_path = "test_data/kdb_structural_output.json"
+        expected_output_path = "sample_data/kdb_structural.json"
 
         # 変換を実行
         convert_csv_to_structural_json(input_csv_path, output_json_path)
@@ -106,14 +106,14 @@ class TestCSVtoJSONConversion(unittest.TestCase):
         self.assertIsInstance(expected_data, dict)
 
         # 出力が期待される結果と一致することを確認
-        self.assertEqual(actual_data, expected_data)
+        self.assertDictEqual(actual_data, expected_data)
 
         # さらに詳細な検証を行う
         for course in actual_data["courses"]:
             self.assertIsInstance(course, dict)
             self.assertEqual(len(course), 19)
 
-        # testdata/test_kdb_structural_output.jsonを削除
+        # test_data/kdb_structural_output.jsonを削除
         os.remove(output_json_path)
 
     def test_parse2yaml(self):
@@ -130,9 +130,9 @@ class TestCSVtoJSONConversion(unittest.TestCase):
             AssertionError: If the conversion result does not match the expected output.
 
         """
-        input_csv_path = "testdata/sample_kdb.csv"
-        output_path = "testdata/test_kdb.yaml"
-        expected_output_path = "testdata/sample_kdb.yaml"
+        input_csv_path = "sample_data/kdb.csv"
+        output_path = "test_data/kdb.yaml"
+        expected_output_path = "sample_data/kdb.yaml"
 
         # 変換を実行
         convert_csv_to_yaml(input_csv_path, output_path)
@@ -150,14 +150,14 @@ class TestCSVtoJSONConversion(unittest.TestCase):
         self.assertIsInstance(expected_data, list)
 
         # 出力が期待される結果と一致することを確認
-        self.assertEqual(actual_data, expected_data)
+        self.assertListEqual(actual_data, expected_data)
 
         # さらに詳細な検証を行う
         for subject in actual_data:
             self.assertIsInstance(subject, dict)
             self.assertEqual(len(subject), 19)
 
-        # testdata/test_kdb_structural_output.jsonを削除
+        # test_data/kdb_structural_output.jsonを削除
         os.remove(output_path)
 
     def test_kdb_twinc_ja_json(self):
@@ -174,13 +174,13 @@ class TestCSVtoJSONConversion(unittest.TestCase):
             AssertionError: If the conversion result does not match the expected output.
 
         """
-        input_csv_path = "testdata/sample_kdb.csv"
-        output_json_path = "testdata/test_kdb_twinc.json"
-        expected_output_path = "testdata/sample_kdb_twinc.json"
+        input_csv_path = "sample_data/kdb.csv"
+        output_json_path = "test_data/kdb_twinc.json"
+        expected_output_path = "sample_data/kdb_twinc.json"
 
         # 変換を実行
         convert_csv_to_twinc_json(
-            name_field_number=3, input_file=input_csv_path, output_file=output_json_path
+            lang="ja", input_file=input_csv_path, output_file=output_json_path
         )
 
         # 変換結果の検証
@@ -196,7 +196,7 @@ class TestCSVtoJSONConversion(unittest.TestCase):
         self.assertIsInstance(expected_data, dict)
 
         # 出力が期待される結果と一致することを確認
-        self.assertEqual(actual_data, expected_data)
+        self.assertDictEqual(actual_data, expected_data)
 
         # さらに詳細な検証を行う
         for class_id, info in actual_data.items():
@@ -204,7 +204,7 @@ class TestCSVtoJSONConversion(unittest.TestCase):
             self.assertIsInstance(info, dict)
             self.assertEqual(len(info), 6)
 
-        # testdata/test_kdb_twinc_ja.jsonを削除
+        # test_data/kdb_twinc_ja.jsonを削除
         os.remove(output_json_path)
 
     def test_kdb_twinc_en_json(self):
@@ -221,13 +221,13 @@ class TestCSVtoJSONConversion(unittest.TestCase):
             AssertionError: If the conversion result does not match the expected output.
 
         """
-        input_csv_path = "testdata/sample_kdb.csv"
-        output_json_path = "testdata/test_kdb_twinc_en.json"
-        expected_output_path = "testdata/sample_kdb_twinc_en.json"
+        input_csv_path = "sample_data/kdb.csv"
+        output_json_path = "test_data/kdb_twinc_en.json"
+        expected_output_path = "sample_data/kdb_twinc_en.json"
 
         # 変換を実行
         convert_csv_to_twinc_json(
-            name_field_number=31,
+            lang="en",
             input_file=input_csv_path,
             output_file=output_json_path,
         )
@@ -245,7 +245,7 @@ class TestCSVtoJSONConversion(unittest.TestCase):
         self.assertIsInstance(expected_data, dict)
 
         # 出力が期待される結果と一致することを確認
-        self.assertEqual(actual_data, expected_data)
+        self.assertDictEqual(actual_data, expected_data)
 
         # さらに詳細な検証を行う
         for class_id, info in actual_data.items():
@@ -253,7 +253,7 @@ class TestCSVtoJSONConversion(unittest.TestCase):
             self.assertIsInstance(info, dict)
             self.assertEqual(len(info), 6)
 
-        # testdata/test_kdb_twinc_en.jsonを削除
+        # test_data/kdb_twinc_en.jsonを削除
         os.remove(output_json_path)
 
 
