@@ -261,33 +261,23 @@ def raw_module_to_terms(raw_module: str) -> Terms:
     Returns:
         Terms: A list of terms.
     """
+    season_number = {"春": 0, "秋": 3}
+    module_number = {"A": 0, "B": 1, "C": 2}
+
     term_groups = raw_module.split(" ")
     season = ""
     terms = []
 
     for group_str in term_groups:
         group = []
-        char_array = list(group_str)
 
-        for char in char_array:
+        for char in list(group_str):
             if char in SEASONS:
                 season = char
 
             if season != "":
-                if char in ["A", "B", "C"]:
-                    if season == "春":
-                        no = 0
-                    else:
-                        no = 3
-
-                    if char == "A":
-                        no += 0
-                    elif char == "B":
-                        no += 1
-                    else:
-                        no += 2
-                    group.append(no)
-
+                if char in ("A", "B", "C"):
+                    group.append(season_number[season] + module_number[char])
                 if char == "休":
                     group.append(SEASONS.index(season) + 6)
 
