@@ -25,12 +25,12 @@ import sys
 from dataclasses import dataclass
 from typing import List, Literal, TypedDict
 
-WEEKDAY_LIST = ["月", "火", "水", "木", "金", "土", "日"]
-SEASONS = ["春", "秋"]
-MODULE_LIST = ["春A", "春B", "春C", "秋A", "秋B", "秋C", "夏季休業中", "春季休業中"]
-SPRING_MODULE_LIST = ["春A", "春B", "春C"]
-FALL_MODULE_LIST = ["秋A", "秋B", "秋C"]
-SPECIAL_MODULE_LIST = ["夏季休業中", "春季休業中"]
+WEEKDAY_LIST = ("月", "火", "水", "木", "金", "土", "日")
+SEASONS = ("春", "秋")
+MODULE_LIST = ("春A", "春B", "春C", "秋A", "秋B", "秋C", "夏季休業中", "春季休業中")
+SPRING_MODULE_LIST = ("春A", "春B", "春C")
+FALL_MODULE_LIST = ("秋A", "秋B", "秋C")
+SPECIAL_MODULE_LIST = ("夏季休業中", "春季休業中")
 
 
 class Table(TypedDict):
