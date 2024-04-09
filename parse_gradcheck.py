@@ -14,7 +14,7 @@ def csv_to_dict():
             course_data = {}
             course_data["id"] = row[0].strip()
 
-            if course_data["id"] == "" :
+            if course_data["id"] == "":
                 continue
             if course_data["id"][0] != "G":
                 continue

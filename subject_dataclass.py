@@ -42,7 +42,7 @@ Attributes:
     remarks (str): Any additional remarks for the subject.
     enrollment_application (str): The availability of enrollment application for the subject.
     enrollment_requirements (str): The requirements for enrollment in the subject.
-    short_term_students_application (str): The availability of enrollment application for short-term 
+    short_term_students_application (str): The availability of enrollment application for short-term
     students.
     short_term_students_requirements (str): The requirements for enrollment of short-term students.
     english_name (str): The English name of the subject.

@@ -38,7 +38,7 @@ def convert_csv_to_json(csv_file_path: str, json_file_path: str) -> None:
     data = {}
     with open(csv_file_path, mode="r", encoding="utf-8") as csv_file:
         csv_reader = csv.DictReader(csv_file, fieldnames=Subject.CSV_HEADER)
-        next(csv_reader) # Skip the header row
+        next(csv_reader)  # Skip the header row
         for row in csv_reader:
             subject = Subject.from_csv_row(row)
             # 科目番号をキーとして、科目情報をリストとして格納
