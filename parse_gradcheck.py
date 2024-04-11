@@ -1,41 +1,63 @@
+"""
+Converts CSV data to grad check JSON format.
+"""
+
 import json
 import csv
+from dataclasses import dataclass, asdict
+from typing import Dict, List
+import logging
+from subject_dataclass import Subject
+
+# Set up logging
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 
-def csv_to_dict():
-    courses = {"courses": []}
-    with open("kdb.csv", "r", encoding="utf_8") as f:
-        reader = csv.reader(f)
-        once = False
-        for row in reader:
-            if not once:
-                once = True
-                continue
-            course_data = {}
-            course_data["id"] = row[0].strip()
-
-            if course_data["id"] == "":
-                continue
-            if course_data["id"][0] != "G":
-                continue
-
-            course_data["name"] = row[1].strip()
-            course_data["credits"] = row[3].strip()
-            course_data["registerYear"] = row[4].strip()
-            course_data["modules"] = row[5].strip()
-            course_data["period"] = row[6].strip()
-            courses["courses"].append(course_data)
-
-    return courses
+@dataclass
+class GradCheckSubject:
+    """
+    Represents a subject with its attributes for grad check.
+    """
+    id: str
+    name: str
+    credits: str
+    registerYear: str
+    modules: str
+    period: str
 
 
-def main():
-    courses = csv_to_dict()
-    with open("kdb_gradcheck.json", "w", encoding="utf-8") as f:
-        json.dump(courses, f, ensure_ascii=False)
+def convert_csv_to_grad_check(input_path: str, output_path: str) -> None:
+    """
+    Main function that converts CSV data to grad check JSON format.
+    """
+    data: Dict[str, List[Dict[str, str]]] = {"courses": []}
 
-    print("complete")
+    with open(input_path, mode="r", encoding="utf-8") as csv_file:
+        csv_reader = csv.DictReader(csv_file, fieldnames=Subject.CSV_HEADER)
+        next(csv_reader)  # Skip the header row
+        subjects = [Subject.from_csv_row(row) for row in csv_reader]
+
+        data["courses"] = [
+            asdict(GradCheckSubject(
+                id=subject.class_id,
+                name=subject.name,
+                credits=subject.credits,
+                registerYear=subject.standard_course_year,
+                modules=subject.module,
+                period=subject.period,
+            ))
+            for subject in subjects
+            if subject.class_id and subject.class_id[0] == "G"
+        ]
+
+    with open(output_path, mode="w", encoding="utf-8") as json_file:
+        json.dump(data, json_file, ensure_ascii=False, indent=2)
+        logging.info("CSVデータを'%s'へ変換しました。", output_path)
 
 
 if __name__ == "__main__":
-    main()
+    INPUT_PATH = "kdb.csv"
+    OUTPUT_PATH = "kdb_gradcheck.json"
+    convert_csv_to_grad_check(INPUT_PATH, OUTPUT_PATH)
