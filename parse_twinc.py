@@ -312,6 +312,6 @@ if __name__ == "__main__":
 
     convert_csv_to_twinc_json(
         lang=langs.lang,
-        input_file="sample_data/kdb.csv",
+        input_file="kdb.csv",
         output_file=langs.output_file,
     )
