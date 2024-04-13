@@ -63,9 +63,7 @@ def course_enum(lang: str) -> Enum:
         return Enum("Course", cols[lang], start=0)
 
 
-def insert_attr_element(
-    parent: ET.Element, name: str, value: str
-) -> ET.Element:
+def insert_attr_element(parent: ET.Element, name: str, value: str) -> ET.Element:
     """
     Inserts a new attribute element into the parent element with the given
     name and value.
@@ -84,13 +82,13 @@ def insert_attr_element(
     return child
 
 
-def csv2xml(reader, course, lang: str) -> ET.Element:
+def csv2xml(reader, course_enum, lang: str) -> ET.Element:
     """
     Convert CSV data to XML format.
 
     Args:
         reader: The CSV reader object.
-        course: The Course class object.
+        course_enum: The Course class object.
         lang (str): The language for translations.
 
     Returns:
@@ -101,11 +99,9 @@ def csv2xml(reader, course, lang: str) -> ET.Element:
     root = ET.Element(get_translations(lang)["courses"])
     for course in reader:
         course_element = ET.SubElement(root, get_translations(lang)["course"])
-        for attr in map(lambda x: x.name, course):
+        for attr in map(lambda x: x.name, course_enum):
             insert_attr_element(
-                parent=course_element,
-                name=attr,
-                value=course[course[attr].value]
+                parent=course_element, name=attr, value=course[course_enum[attr].value]
             )
 
     return root
