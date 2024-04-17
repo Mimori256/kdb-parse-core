@@ -28,7 +28,7 @@ class GradCheckSubject:
     period: str
 
 
-def convert_csv_to_grad_check(input_path: str, output_path: str) -> None:
+def convert_csv_to_gradcheck(input_path: str, output_path: str) -> None:
     """
     Main function that converts CSV data to grad check JSON format.
     """
@@ -60,4 +60,4 @@ def convert_csv_to_grad_check(input_path: str, output_path: str) -> None:
 if __name__ == "__main__":
     INPUT_PATH = "kdb.csv"
     OUTPUT_PATH = "kdb_gradcheck.json"
-    convert_csv_to_grad_check(INPUT_PATH, OUTPUT_PATH)
+    convert_csv_to_gradcheck(INPUT_PATH, OUTPUT_PATH)
