@@ -61,6 +61,17 @@ class Class:
     room: str = field(default=" ")  # デフォルト値を指定
 
 
+def escape_ics_text(text: str) -> str:
+    """
+    Normalize text for downstream ICS serialization.
+
+    TwinC writes DESCRIPTION directly into an ICS line, so literal newlines
+    would terminate the property early. Store them as escaped "\\n" instead.
+    """
+    normalized = text.replace("\r\n", "\n").replace("\r", "\n")
+    return normalized.replace("\n", "\\n")
+
+
 def parsed_module(terms: Terms) -> List[List[str]]:
     """
     This function parses the module list and returns a list of module strings.
@@ -247,7 +258,9 @@ def subject_to_class(lang: Lang, subject: Subject) -> Class:
         room=(
             subject.room if subject.room != "" else " "
         ),  # Room is stored in the 'Room' field
-        description=subject.remarks,  # Description is stored in the 'Remarks' field
+        description=escape_ics_text(
+            subject.remarks
+        ),  # Description is stored in the 'Remarks' field
     )
 
 

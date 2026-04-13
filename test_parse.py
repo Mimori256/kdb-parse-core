@@ -348,6 +348,33 @@ class TestCSVtoJSONConversion(unittest.TestCase):
         self.assertEqual(parsed.module, [["春A"], ["春B"]])
         self.assertEqual(parsed.period, [["土4", "土5"], ["土6", "土7"]])
 
+    def test_subject_to_class_escapes_multiline_remarks_for_ics(self):
+        subject = Subject(
+            class_id="01TEST4",
+            name="複数行備考科目",
+            method="1",
+            credits="1.0",
+            standard_course_year="1",
+            module="春A",
+            period="月1",
+            teaching_staff="教員D",
+            class_outline="概要D",
+            remarks="1行目\r\n2行目\n3行目",
+            enrollment_application="×",
+            enrollment_requirements="条件D",
+            short_term_students_application="",
+            short_term_students_requirements="",
+            english_name="Multiline Remarks Course",
+            subject_code="0TEST04",
+            requirement_subject_name="複数行備考科目",
+            data_update_date="2026-04-14 00:00:00",
+            room="",
+        )
+
+        parsed = subject_to_class("ja", subject)
+
+        self.assertEqual(parsed.description, "1行目\\n2行目\\n3行目")
+
 
 if __name__ == "__main__":
     unittest.main()
