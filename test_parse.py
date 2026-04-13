@@ -8,12 +8,17 @@ It verifies the correctness of the conversion process and performs additional va
 import os
 import unittest
 import json
+import csv
+import io
 import yaml
+from download import normalize_csv_text
 from parse import convert_csv_to_json
 from parse_structural import convert_csv_to_structural_json
 from parse2yaml import convert_csv_to_yaml
 from parse_twinc import convert_csv_to_twinc_json
+from parse_twinc import subject_to_class
 from parse_gradcheck import convert_csv_to_gradcheck
+from subject_dataclass import Subject
 
 
 class TestCSVtoJSONConversion(unittest.TestCase):
@@ -301,6 +306,47 @@ class TestCSVtoJSONConversion(unittest.TestCase):
 
         # test_data/kdb_gradcheck.jsonを削除
         os.remove(output_json_path)
+
+    def test_normalize_current_kdb_csv(self):
+        with open("sample_data/kdb_current.csv", mode="r", encoding="utf-8") as f:
+            normalized_csv = normalize_csv_text(f.read())
+
+        rows = list(csv.reader(io.StringIO(normalized_csv)))
+
+        self.assertEqual(rows[0], Subject.CSV_HEADER)
+        self.assertEqual(len(rows[1]), len(Subject.CSV_HEADER))
+        self.assertEqual(rows[1][7], "")
+        self.assertEqual(rows[1][8], "教員A")
+        self.assertEqual(rows[2][5], "秋ABC")
+        self.assertEqual(rows[2][7], "")
+
+    def test_subject_to_class_with_newline_separated_terms(self):
+        subject = Subject(
+            class_id="01TEST3",
+            name="改行区切り科目",
+            method="1",
+            credits="1.0",
+            standard_course_year="1",
+            module="春A\n春B",
+            period="土4,5\n土6,7",
+            teaching_staff="教員C",
+            class_outline="概要C",
+            remarks="備考C",
+            enrollment_application="×",
+            enrollment_requirements="条件C",
+            short_term_students_application="",
+            short_term_students_requirements="",
+            english_name="Newline Terms Course",
+            subject_code="0TEST03",
+            requirement_subject_name="改行区切り科目",
+            data_update_date="2026-04-13 00:00:00",
+            room="",
+        )
+
+        parsed = subject_to_class("ja", subject)
+
+        self.assertEqual(parsed.module, [["春A"], ["春B"]])
+        self.assertEqual(parsed.period, [["土4", "土5"], ["土6", "土7"]])
 
 
 if __name__ == "__main__":

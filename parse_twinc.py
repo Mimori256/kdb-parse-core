@@ -192,7 +192,7 @@ def subject_to_class(lang: Lang, subject: Subject) -> Class:
     terms = raw_module_to_terms(subject.module)
     boolean_periods: List[PeriodTable] = []
 
-    term_str_array = subject.period.split(" ")
+    term_str_array = re.split(r"\s+", subject.period.strip()) if subject.period.strip() else [""]
 
     for i, term in enumerate(term_str_array):
         period_str_array = term.split(",")
@@ -264,7 +264,7 @@ def raw_module_to_terms(raw_module: str) -> Terms:
     season_number = {"春": 0, "秋": 3}
     module_number = {"A": 0, "B": 1, "C": 2}
 
-    term_groups = raw_module.split(" ")
+    term_groups = re.split(r"\s+", raw_module.strip()) if raw_module.strip() else [""]
     season = ""
     terms = []
 
