@@ -1,85 +1,132 @@
-import os
+import csv
 import datetime
-import urllib.parse
+import io
 import sys
+from pathlib import Path
+
 import requests
 
-now = datetime.datetime.now()
-year = now.year
-month = now.month
+from subject_dataclass import Subject
 
-if month < 3:
-    nendo = year - 1
-
-else:
-    nendo = year
-
-post = {
-    "index": "",
-    "locale": "",
-    "nendo": nendo,
-    "termCode": "",
-    "dayCode": "",
-    "periodCode": "",
-    "campusCode": "",
-    "hierarchy1": "",
-    "hierarchy2": "",
-    "hierarchy3": "",
-    "hierarchy4": "",
-    "hierarchy5": "",
-    "freeWord": "",
-    "_orFlg": 1,
-    "_andFlg": 1,
-    "_gaiyoFlg": 1,
-    "_risyuFlg": 1,
-    "_excludeFukaikoFlg": 1,
-}
-
-kdb_url = "https://kdb.tsukuba.ac.jp/"
-session = requests.session()
-response = session.get(kdb_url)
-
-if response.status_code != 200:
-    raise ValueError("Connection Error")
+KDB_URL = "https://kdb.tsukuba.ac.jp/"
+KDB_EXPORT_ENCODING = "cp932"
+CURRENT_KDB_ROW_LENGTH = len(Subject.CSV_HEADER) - 1
 
 
-do_url = response.url
-qs = urllib.parse.urlparse(do_url).query
-query_dict = urllib.parse.parse_qs(qs)
+def get_academic_year(today: datetime.datetime | None = None) -> int:
+    now = today or datetime.datetime.now()
+    return now.year - 1 if now.month < 3 else now.year
 
-# search
-search_post = post.copy()
-search_post["_eventId"] = "searchOpeningCourse"
-response = session.post(do_url, data=search_post)
-do_url = response.url
 
-# download a csv
-csv_post = post.copy()
-csv_post["_eventId"] = "output"
-csv_post["outputFormat"] = 0
-response = session.post(do_url, data=csv_post)
+def switch_to_japanese(session: requests.Session) -> None:
+    response = session.post(
+        KDB_URL,
+        data={
+            "widgetAction": "change",
+            "widgetId": "BS0030",
+            "pageId": "SB0070",
+            "lang": "jpn",
+        },
+    )
+    response.raise_for_status()
 
-# output
-with open("tmp.csv", "w", encoding="utf-8") as fp:
-    fp.write(response.text)
 
-if not os.path.exists("kdb.csv"):
-    os.rename("tmp.csv", "kdb.csv")
+def create_download_payload(academic_year: int) -> dict[str, str]:
+    return {
+        "pageId": "SB0070",
+        "action": "downloadList",
+        "hdnFy": str(academic_year),
+        "hdnTermCode": "",
+        "hdnDayCode": "",
+        "hdnPeriodCode": "",
+        "hdnAgentName": "",
+        "hdnOrg": "",
+        "hdnIsManager": "",
+        "hdnReq": "",
+        "hdnFac": "",
+        "hdnDepth": "",
+        "hdnChkSyllabi": "",
+        "hdnChkAuditor": "",
+        "hdnChkExchangeStudent": "",
+        "hdnChkConductedInEnglish": "",
+        "hdnCourse": "",
+        "hdnKeywords": "",
+        "hdnFullname": "",
+        "hdnDispDay": "",
+        "hdnDispPeriod": "",
+        "hdnOrgName": "",
+        "hdnReqName": "",
+        "cmbDwldtype": "csv",
+    }
+
+
+def is_html_response(content: bytes) -> bool:
+    stripped = content.lstrip().lower()
+    return stripped.startswith(b"<!doctype html") or stripped.startswith(b"<html")
+
+
+def normalize_row(row: list[str]) -> list[str]:
+    if len(row) == len(Subject.CSV_HEADER):
+        return row
+
+    if len(row) == CURRENT_KDB_ROW_LENGTH:
+        return row[:7] + [""] + row[7:]
+
+    raise ValueError(f"Unexpected CSV row length: {len(row)}")
+
+
+def normalize_csv_text(csv_text: str) -> str:
+    reader = csv.reader(io.StringIO(csv_text))
+    rows = [row for row in reader if any(cell.strip() for cell in row)]
+
+    if not rows:
+        raise ValueError("The downloaded CSV is empty.")
+
+    has_header = rows[0][0].strip() in {"科目番号", "Course Number"}
+    data_rows = rows[1:] if has_header else rows
+
+    normalized_rows = [Subject.CSV_HEADER]
+    normalized_rows.extend(normalize_row(row) for row in data_rows)
+
+    output = io.StringIO(newline="")
+    writer = csv.writer(output, quoting=csv.QUOTE_ALL, lineterminator="\n")
+    writer.writerows(normalized_rows)
+    return output.getvalue()
+
+
+def fetch_csv_text(session: requests.Session, academic_year: int) -> str:
+    response = session.post(KDB_URL, data=create_download_payload(academic_year))
+    response.raise_for_status()
+
+    if is_html_response(response.content):
+        raise ValueError("Failed to download CSV: KDB returned HTML instead.")
+
+    decoded_text = response.content.decode(KDB_EXPORT_ENCODING)
+    return normalize_csv_text(decoded_text)
+
+
+def write_csv_if_changed(csv_text: str, output_path: str = "kdb.csv") -> bool:
+    output_file = Path(output_path)
+
+    if output_file.exists() and output_file.read_text(encoding="utf-8") == csv_text:
+        print("No change")
+        return False
+
+    output_file.write_text(csv_text, encoding="utf-8")
     print("CSV updated")
-    sys.exit()
+    return True
 
-original = open("kdb.csv", "r", encoding="utf-8")
-changed = open("tmp.csv", "r", encoding="utf-8")
 
-# no change
-if original == changed:
-    os.remove("tmp.csv")
-    print("No change")
+def main() -> int:
+    session = requests.Session()
+    response = session.get(KDB_URL)
+    response.raise_for_status()
 
-else:
-    print("CSV updated")
-    os.remove("kdb.csv")
-    os.rename("tmp.csv", "kdb.csv")
+    switch_to_japanese(session)
+    csv_text = fetch_csv_text(session, get_academic_year())
+    write_csv_if_changed(csv_text)
+    return 0
 
-original.close()
-changed.close()
+
+if __name__ == "__main__":
+    sys.exit(main())

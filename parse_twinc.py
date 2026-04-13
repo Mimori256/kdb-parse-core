@@ -61,6 +61,17 @@ class Class:
     room: str = field(default=" ")  # デフォルト値を指定
 
 
+def escape_ics_text(text: str) -> str:
+    """
+    Normalize text for downstream ICS serialization.
+
+    TwinC writes DESCRIPTION directly into an ICS line, so literal newlines
+    would terminate the property early. Store them as escaped "\\n" instead.
+    """
+    normalized = text.replace("\r\n", "\n").replace("\r", "\n")
+    return normalized.replace("\n", "\\n")
+
+
 def parsed_module(terms: Terms) -> List[List[str]]:
     """
     This function parses the module list and returns a list of module strings.
@@ -192,7 +203,7 @@ def subject_to_class(lang: Lang, subject: Subject) -> Class:
     terms = raw_module_to_terms(subject.module)
     boolean_periods: List[PeriodTable] = []
 
-    term_str_array = subject.period.split(" ")
+    term_str_array = re.split(r"\s+", subject.period.strip()) if subject.period.strip() else [""]
 
     for i, term in enumerate(term_str_array):
         period_str_array = term.split(",")
@@ -247,7 +258,9 @@ def subject_to_class(lang: Lang, subject: Subject) -> Class:
         room=(
             subject.room if subject.room != "" else " "
         ),  # Room is stored in the 'Room' field
-        description=subject.remarks,  # Description is stored in the 'Remarks' field
+        description=escape_ics_text(
+            subject.remarks
+        ),  # Description is stored in the 'Remarks' field
     )
 
 
@@ -264,7 +277,7 @@ def raw_module_to_terms(raw_module: str) -> Terms:
     season_number = {"春": 0, "秋": 3}
     module_number = {"A": 0, "B": 1, "C": 2}
 
-    term_groups = raw_module.split(" ")
+    term_groups = re.split(r"\s+", raw_module.strip()) if raw_module.strip() else [""]
     season = ""
     terms = []
 
